@@ -18,6 +18,8 @@ If the marker cannot execute your coursework they can't grade it!
 ## Selection of project methodology
 ### Methodology (or combination) selected
 
+The Scenario: EU.com wants to develop (copy this from previous scnario examples)
+
 Choosing an Agile methodology for this project will be essential given the business criteria identified in the next 
 section. In particular, we will focus on the Scrum Methodology as it will equip the team with a rigorous but flexible 
 process applicable for data science. This will be important, because not only, we are looking to develop a web 
@@ -82,9 +84,47 @@ entry-level professionals.
 ## Definition of the business need
 ### Problem definition
 
+The European Commission needs to shortlist 3 countries in EU for a significant investment plan aimed at facilitating
+the ease of doing business to reducing inequalities across EU.
+This is 5 year-long plan that needs to be implemented by 2022 to improve the current economic outlook, 
+creating future opportunities for younger generations. 
+Nevertheless, with the current economic uncertainties and inequalities across Europe, the Commission faces 
+an intense pressure to make a sound investment decision.
+
+This decision represents a problem for the board because investing in the wrong countries would contribute to 
+increased inequalities, widening the gap between the businesses and nations in EU. As a result, the EU predicts 
+that with a widening gap, businesses will avoid investing in poorer countries like Italy where the conditions of 
+doing businesses are more disadvantageous. This, in turn, affects the whole nation and its population limiting its 
+economic growth and opportunities. The Board is considering assessing as many parameters as possible from the 
+World Bank Dataset, however, they are struggling to translate this data into actionable business intelligence for 
+senior leaders. 
+
+There have multiple investment occasions in the past across Europe and, this problem arises every time that an
+investment opportunity arise. Thus, through a web product, the EU Commission can visualize clearly the parameters of 
+each country. Benchmarking these parameters through data visualizations across the different countries would help 
+Leaders at the EU Commission to objectively map and assess the EU situation. This will make their decisions actionable, 
+measurable and specifically oriented at ensuring growth in less developed nations. 
+
 ### Target audience
 
+The target audience is the leadership management board at the European Commission as they would be interested to gain actionable 
+insights from this data. From this web product and the embedded data visualizations they can implement policies an
+initiatives that best address  in nations and problems with disavntageous business conditions. 
+Not only with this data they can make become more specific on the nations that require improvement, but they can also
+drastically improve the impact of their initiatives by addressing the specific problem. As all fields (i.e. Economics, 
+Politics, Environments), all contribute to the ease of doing business, this data targets the whole EU Board of 
+Commission, irrespective of the industry each director manage. Thus, the board, our target audience, can jointly work on
+new initiatives collaborately tackilging each problem from the respective perspective (legal, economic, environmental).
+
+While each director has an understanding of tech, we are targetting experienced sales professional aged at least over 50 
+years old. Therefore, ease of access and intuiveness should be our key priorities when  working on the design of the
+app. Moreover, as they are part of the management board, we expect these people to be very busy and accustomed to famous
+economic journals (i.e. FT). Therefore, results should be presented concisevely with clear visualisaitions. 
+
 ### Questions to be answered using the dataset
+
+
+
 
 ### Suggested web app
 
