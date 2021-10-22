@@ -109,20 +109,43 @@ measurable and specifically oriented at ensuring growth in less developed nation
 
 The target audience is the leadership management board at the European Commission as they would be interested to gain actionable 
 insights from this data. From this web product and the embedded data visualizations they can implement policies an
-initiatives that best address  in nations and problems with disavntageous business conditions. 
+initiatives that best address  in nations and problems with disadvantageous business conditions. 
 Not only with this data they can make become more specific on the nations that require improvement, but they can also
 drastically improve the impact of their initiatives by addressing the specific problem. As all fields (i.e. Economics, 
 Politics, Environments), all contribute to the ease of doing business, this data targets the whole EU Board of 
 Commission, irrespective of the industry each director manage. Thus, the board, our target audience, can jointly work on
-new initiatives collaborately tackilging each problem from the respective perspective (legal, economic, environmental).
+new initiatives collaboratively tackling each problem from the respective perspective (legal, economic, environmental).
 
-While each director has an understanding of tech, we are targetting experienced sales professional aged at least over 50 
-years old. Therefore, ease of access and intuiveness should be our key priorities when  working on the design of the
+While each director has an understanding of tech, we are targeting experienced sales professional aged at least over 50 
+years old. Therefore, ease of access and intuitiveness should be our key priorities when  working on the design of the
 app. Moreover, as they are part of the management board, we expect these people to be very busy and accustomed to famous
-economic journals (i.e. FT). Therefore, results should be presented concisevely with clear visualisaitions. 
+economic journals (i.e. FT). Therefore, results should be presented concisely with clear visualizations. 
 
 ### Questions to be answered using the dataset
 
+Given the questions and the problem statement, some of the questions that can be answered using the dataset are:
+
+1. Which countries in Europe have the lowest "ease of doing business" scores?
+2. Which variables, representing the biggest problems in doing business, have the lowest scores across EU countries?
+3. How do the bottom 5 European countries compare to each other across each of the variables?
+4. How have these nations' scores evolved from 2014 to 2020? In other words, have the nations been improving in their 
+respective variables?
+5. Over the years, has getting credit been easier or more difficult for businesses across Europe?
+
+Once the countries with the lowest scores have been identifies, some of the more specific questions that can be 
+answered are:
+
+1. How easy it is for country X to trade across borders?
+2. Given that countries XYZ have the lowest score for "Paying Taxes", has it improved over the years?
+3. Is "Enforcing Contracts" one of the reasons why it is difficult to do business in country X?
+
+Addressing these questions can help the EU understand which countries are the least attractive investment for businesses
+and what are the sub-problems. This is very useful because it will allow the EU to come up with a specific investments 
+plan and set of initiatives that best address the country and the problems from a wide variety of different perspectives.
+Rather than focusing only on aspect (i.e. paying taxes), this data can offer insights into a wide range of variables. 
+Moreover, as part of this assessment, it is important to assess the trend before making a final investment decision. 
+It could be very worthwhile to understand whether a country has been improving before investing. 
+This could drastically improve the EU's impact on the economic outlook of a country.
 
 
 
