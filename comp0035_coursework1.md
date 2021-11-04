@@ -198,26 +198,68 @@ Please add names of your data set files in this repository below, then delete th
 [Data Exploration]()
 
 ## Weekly progress reports
-Copy and paste from Moodle or use the following structure. Delete this instruction text.
-
-What I did in the last week:
-- item
-- item
-
-What I plan to do in the next week:
-- item
-- item
-
-Issues blocking my progress (state ‘None’ if there are no issues):
-- item
-- item
-
 ### Report 1
+List what you completed or made progress on this week (in the coursework project).
+- Finish Setting Up CW1 on PyCharm
+- Worked on some assumptions as the context of the project
+- Identified the most important business criteria for the project
+- Studied and learnt about the different methodologies 
+- Selected the best methodology for the project
+-Finished writing section 1, explaining the Scrum methodology and justifying my choice
+
+  
+List what you plan to do next week (for the coursework project):
+- Defining a Business Need, clarifying what problems I am solving for the client
+- Defining a target audience
+- Understanding how the dataset can solve the business need and provide value to the client
+- Understanding how Software Development and Data Science specifically are related to  the business need
+
+
+Briefly describe any issues that are impeding your progress (in the coursework project).
+- None
 
 ### Report 2
+List what you completed or made progress on this week (in the coursework project).
+- Worked on a hypothetical scenario that would help me define a problem statement taking my dataset into account.
+- Defined the problem statement considering different approaches from the PBL 3 Document - Lack of data insights for EU Investment Decisions
+- Identified the target audience considering why their needs and goals - EU Commission Board
+- Created one persona better describing my target audience
+- Developed 3 Questions that we can answer using the DataSet provided and explaining how the answers might be useful to the target audience
+
+
+List what you plan to do next week (for the coursework project):
+- Review Problem Statement with the Tutor Session Feedback
+- Adding suggested use of the web product based on review and feedback
+- Preparing data (i.e. cleaning data, finding  outliers, condensing the size of the data in relation to the problem statement)
+- Documenting the steps in cleaning data and the why
+
+Briefly describe any issues that are impeding your progress (in the coursework project).
+-No major issues at the moment. The only challenge is with the dataset: 
+ The dataset seems to be limited in terms of the hypothetical scenarios in which it can be used to solve a problem. 
+ In other words, with this dataset, it is challenging to think of a real-life scenario in which a client might need to 
+ use it. So, I am not sure to what extent the fictional scenario I have imagined will really help me answer the 
+ questions identified in the problem statement.
 
 ### Report 3
+List what you completed or made progress on this week (in the coursework project).
+- Installed the set of the relevant libraries to prepare the data (i.e. Pandas). As part of this, I had to troubleshoot
+  problems relating to setting up the venv library. Whenever I was working with new projects like the prepare data pdf from PLB3 Pycharm was working, however, with this coursework working with the venv library has been a challenge
+- Opened the "Doing Business" Dataset in a Pandas Dataframe
+- Completed Basic Data Statistics to have basic information about the data frame (i.e. rows, columns, size)
+- Worked on unnecessary columns and missing data
+-Checking for unique values
 
+
+List what you plan to do next week (for the coursework project):
+- Documenting my "prepare the data" code. This means adding to the main coursework a description of the dataset and 
+  justifications of how I have used the code to prepare the data relevantly to the problem statement
+- Exploring the data, using new code that is relevant to the problem statement and the questions raised in PLB3
+- Improving my description of the scenario at the beginning of the coursework. This is a small section at the beginning 
+  to explain the context and assumptions  upon which problem statement, methodology, target audience have been created
+
+
+Briefly describe any issues that are impeding your progress (in the coursework project).
+- None
 ### Report 4
 
 ## References
