@@ -18,7 +18,16 @@ If the marker cannot execute your coursework they can't grade it!
 ## Selection of project methodology
 ### Methodology (or combination) selected
 
-The Scenario: EU.com wants to develop (copy this from previous scnario examples)
+The Scenario
+DataFirst, a software development company made up of graduates, is developing a web app for their client, the European 
+Commission. The European Commission have created a fund for a set of economic investments aimed at reducing the economic
+inequalities across the European countries. For this plan, The EU Leadership Team has decided to target countries 
+with many barriers to doing business and therefore are the least attractive options for new investments and businesses. 
+To make this assessment, they would like to focus specifically on 4 Indicators from World Bank Dataset: Getting Credit,
+Starting a Business, Resolving Insolvency, Trading Across Borders. The European Commission has a vague idea of what 
+the Senior Leaders might find useful to make the investment decision, nevertheless, they do not know what solution would
+be optimal to have the best interpretation of business insights.
+The DataFirst Team
 
 Choosing an Agile methodology for this project will be essential given the business criteria identified in the next 
 section. In particular, we will focus on the Scrum Methodology as it will equip the team with a rigorous but flexible 
@@ -95,9 +104,9 @@ This decision represents a problem for the board because investing in the wrong 
 increased inequalities, widening the gap between the businesses and nations in EU. As a result, the EU predicts 
 that with a widening gap, businesses will avoid investing in poorer countries like Italy where the conditions of 
 doing businesses are more disadvantageous. This, in turn, affects the whole nation and its population limiting its 
-economic growth and opportunities. The Board is considering assessing as many parameters as possible from the 
-World Bank Dataset, however, they are struggling to translate this data into actionable business intelligence for 
-senior leaders. 
+economic growth and opportunities. The EU Commission is specifically assessing 4 metrics (Getting Credit, Starting a 
+Business, Resolving Insolvency Trading across borders)World Bank Dataset, however, they are struggling to translate 
+this data into actionable business intelligence for senior leaders. 
 
 There have multiple investment occasions in the past across Europe and, this problem arises every time that an
 investment opportunity arise. Thus, through a web product, the EU Commission can visualize clearly the parameters of 
@@ -123,38 +132,61 @@ economic journals (i.e. FT). Therefore, results should be presented concisely wi
 
 ### Questions to be answered using the dataset
 
-Given the questions and the problem statement, some of the questions that can be answered using the dataset are:
+Given the problem statement and the target audience, we assume that these are the type of questions this project aims to answer:
 
-1. Which countries in Europe have the lowest "ease of doing business" scores?
-2. Which variables, representing the biggest problems in doing business, have the lowest scores across EU countries?
-3. How do the bottom 5 European countries compare to each other across each of the variables?
-4. How have these nations' scores evolved from 2014 to 2020? In other words, have the nations been improving in their 
-respective variables?
-5. Over the years, has getting credit been easier or more difficult for businesses across Europe?
+1. Which countries in Europe have performed worse in 2020?
+2. What problems are the worst-performing countries facing?
+3. Has the "Starting a new Business" Score improved over the years for Italy?
+4. What countries have the lowest scores in Getting Credit?
+5. Overall, across the 4 variables, has the ease of doing business improved over the years?
 
-Once the countries with the lowest scores have been identifies, some of the more specific questions that can be 
-answered are:
 
-1. How easy it is for country X to trade across borders?
-2. Given that countries XYZ have the lowest score for "Paying Taxes", has it improved over the years?
-3. Is "Enforcing Contracts" one of the reasons why it is difficult to do business in country X?
-
-Addressing these questions can help the EU understand which countries are the least attractive investment for businesses
-and what are the sub-problems. This is very useful because it will allow the EU to come up with a specific investments 
+Addressing these questions can help the EU understand what problems each of the countries are facing before 
+making an investment. This is very useful because it will allow the EU to come up with a specific investments 
 plan and set of initiatives that best address the country and the problems from a wide variety of different perspectives.
-Rather than focusing only on aspect (i.e. paying taxes), this data can offer insights into a wide range of variables. 
-Moreover, as part of this assessment, it is important to assess the trend before making a final investment decision. 
-It could be very worthwhile to understand whether a country has been improving before investing. 
-This could drastically improve the EU's impact on the economic outlook of a country.
-
-
-
-### Suggested web app
+Rather than focusing only on one problem (i.e. getting credit), this data can offer insights into a wide range of variables. 
+Moreover, as part of the investment decision, it is important to consider whether countries have been improving in a 
+particular area over the years. Deciding to invest and implement new initiatives in a country who has not been
+improving can have a  more significant impact than investing in a country with a low score but that is starting to improve. 
+As a result, besides providing the EU board with stronger awareness of EU challenges,  answering these questions will be 
+help the EU Team maximise the impact of their initiatives on the economies of EU countries.
 
 ## Data preparation and exploration
 ### Data preparation
-
 [Data Preparation](data_preparation.py)
+
+The first step in preparing the data was to have a basic understanding of the dataset. Therefore, 
+after loading the dataset as a dataframe variable, it was essential to print the number and the labels of rows and columns. 
+From the output, it is clear that we are dealing with a very big dataset as we have 43665 rows and 22 columns. 
+The first 4 columns represent categorical data, giving us information about the country and the type of metric the score is based upon. 
+Whereas, the remaining column were numerical representing the score in each year from 2004 to 2020.
+At first glance, and considering the size of the dataset, the only obvious column I could remove was the Indicator Code because it was repeating the preceding column. 
+Nevertheless, another column, Unnamed:21, was automatically created with null values when loading the dataset into the dataframe
+It was necessary to eliminate this column before checking for null values, because dropping rows while maintaining this column would have removed my all dataset. 
+
+While, I was able to remove the null values from the automatically created column, I still needed to check for null values across all the other columns.
+Based on the is.null() output, the current 3 categorical column had 0 null values whereas all the Years columns had null
+values, decreasing with the most recent years. Thus, because the number of null values was significant in years 
+2004 - 2015 (at least above 18,000 with a dataset of 43,000 rows), I decided that the best solution was to remove columns 2004 to 2015.
+Because most of the null values are in the columns that have been drop, whenever we will remove the remaining null 
+values in the remaining columns, we will still be able to deal with significant amount of data which also more relevant 
+and recent to the EU Leadership Team.
+Moreover, replacing the null variables with other values (i.e. mean) was not an option in this scenario because we are 
+dealing with scores of multiple indicators. Averaging all the data for a particular year would give us an average that 
+does not specifically represent each category. 
+Finally, given that there were no anomalies from the remaining columns 2016 to 2020, the last step was to remove the 
+remaining null values with dropna().
+
+At this point, we have reduced the dataset to 31263 rows and 8 columns. However, the dataset still has worldwide data 
+which is not yet relevant to the EU Commission. The current dataset does not have any columns that could help us filter 
+for EU Countries only, however there is a different dataset from the World Bank (DBCountry.csv) with more information on each of this 
+country. After loading this dataset, we notice there are 31 columns and 193 rows. From this dataset, we identify only 
+two columns that we can be useful to our problem: Country Code and Currency Unit. 
+We, therefore set the newly created dataframe as only these 2 columns removing the remaining 29. Country Code would serve 
+us as the common column (index) when merging the 2 dataframes, and Currency Unit will allow us to filter only for countries trading with Euros
+Indeed, after removing all other currencies, we have a final dataset of 3315 rows and 9 columns addressing the essential requirements of the EU Commission.
+
+
 
 ### Prepared data set
 Please add names of your data set files in this repository below, then delete this instruction text.

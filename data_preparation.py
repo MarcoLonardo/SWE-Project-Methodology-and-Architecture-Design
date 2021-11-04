@@ -38,7 +38,7 @@ print(df.isnull().sum())
 
 #Removing Addtional Columns becuase I can see too many blank cells for 2004 to 2015 and also it will be more valueable
 # for EU leaders to condense the improvements only based on the initiaves of the last 5 years
-df = df.drop(['2004','2005','2006','2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014'], axis=1)
+df = df.drop(['2004','2005','2006','2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014','2015'], axis=1)
 
 # Our research is country specific, so we need to ensure we have data for the countries. If we dont, we need to
 # remove it becuase we can't come up with assumptions for each category. We could do the mean for each parameter
@@ -51,12 +51,8 @@ df.dropna(axis=0, inplace=True)
 print(df.shape)
 
 # Finding Unique Values in the last 5 years to check for anomalies
-df['2015'].unique
-df['2016'].unique
-df['2017'].unique
-df['2018'].unique
-df['2019'].unique
-df['2020'].unique
+
+df['2020'].unique()
 
 # Load another dataset into a pandas dataframe. From this we will need other columns to filter for Euro Countries
 df1 = pd.read_csv('DBCountry.csv')
@@ -70,7 +66,7 @@ print(df.columns)
 df1 = df1[['Country Code', 'Currency Unit']]
 
 # Summarise the current dataframe to see if the latest scrips have been reflected
-print(df.shape)
+print(df1.shape)
 print(df1.head(5))
 
 #Merging datasets to add additional variables allowing us to filter for EU Countries
@@ -83,5 +79,9 @@ print(df.shape)
 # https://stackoverflow.com/questions/53784017/drop-rows-that-do-not-contain-a-string-within-a-value-using-pandas
 df = df[df["Currency Unit"].str.contains("Euro")]
 
-# Save the DataFrame back to a new csv
+# Save the DataFrame back to a ndf.to_csv('cleaned_dataset.csv', index=False)ew csv
 df.to_csv('cleaned_dataset.csv', index=False)
+
+
+df.to_csv('cleaned_dataset1.csv', index=False)
+
