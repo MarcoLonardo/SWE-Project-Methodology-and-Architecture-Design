@@ -4,6 +4,8 @@
 
 # Setting Pandas Options so that all rows and columns will be printed in the output
 # First step here is to print all the rows this is important becuase we need to explore the different metrics/indicators and eventusally filter for them
+import pandas as pd
+
 pd.set_option('display.max_rows', df.shape[0] + 1)
 pd.set_option('display.expand_frame_repr', False)
 
@@ -17,6 +19,7 @@ df['Indicator Name'].describe()
 #Listing all the Unique Rows
 df['Indicator Name'].unique()
 
+df[df["Indicator Name"].str.contains("Score")].nunique()
 #Double-checking the unique values number / https://stackoverflow.com/questions/45759966/counting-unique-values-in-a-column-in-pandas-dataframe-like-in-qlik/45760042
 df['Indicator Name'].nunique()
 
@@ -69,14 +72,8 @@ df.rename(columns={
 df['Overall Score'] = df[['Getting Credit - Score', 'Starting a business - Score', 'Trading across borders - Score','Resolving insolvency - Score']].mean(axis=1)
 
 
-
-
-
-# Converting in type
-
 # Checking type
 print(df.info(verbose=True))
-
 
 # Final View over the dataset
 print(df.shape)
@@ -87,30 +84,64 @@ print(df.head(10))
 import matplotlib.pyplot as plt
 
 # Checking for Outliers - From this we can see that there are no outliers because these values
-# are all withing the expected range. As we can see there are no values below 0 or above 100 meaning that
-# It is important to keep these data becuase it gives us a clear picture
 boxplot = df.boxplot(column=['Getting Credit - Score','Resolving insolvency - Score',
                              'Starting a business - Score', 'Trading across borders - Score'], fontsize=6)
 boxplot.plot()
 plt.show()
 
+# Plotting dataset
+df.plot()
+plt.show()
 
-plt.hist(df['Getting Credit - Score'])
+# First Step is to explore the overall performance of the different countries across these variables in 2020
+# When trying to plot this data, it is clear that dealing with too many variables makes it diffcult to plot the data in a meanigful way.
+# As we have repeating rows, we do not need to plot every single score of each row, but an average  of the score by the country, year or indicator type.
+# We cannot, however, plot the average of multiple columns, therefore we will split the current dataset creating to explore the variables indipendently.
+# Creating a new dataframe containing only 2020 data
+df2 =df[df["Year"].str.contains("2020")]
+# Dropping the column year so that we can explore the avarage of all the indicators by the individual countries
+df2 =df2.drop('Year',1)
+
+# Plotting the average of all indicators and grouping these by the countries
+df2.groupby(['Country Name']).agg(['mean']).plot.bar()
+plt.show()
+
+# Creating a new dataset with only two columns
+df3 = df[['Country Name', 'Overall Score']]
+# Plotting the average of the overall scores by each country
+df3.groupby(['Country Name']).agg(['mean']).plot.bar()
+
+#Creating a new dataframe only containing 2020 values
+df4 = df[df["Year"].str.contains("2020")]
+# Creating a new variable only with the worst-performing countries
+Worst_Countries = ["Malta",
+               "Luxembourg",
+               "Greece",
+               "San Marino"]
+# Dropping all rows except the ones in Worst_Countries
+df4 = df4[df4["Country Name"].isin(Worst_Countries) == True]
+
+# Dropping the Year Column to avoid skewing the results
+df4 =df4.drop('Year',1)
+
+# Plotting the average of all indicators and grouping these by the countries
+df4.groupby(['Country Name']).agg(['mean']).plot.bar(fontsize=6)
 plt.show()
 
 
-plt.hist(df['Getting Credit - Score'])
-plt.show
+# Create a line chart plotting the mean of all indicators over the years
+df.groupby(['Year']).agg(['mean']).plot.line(fontsize=15)
+plt.show()
 
 
-plt.hist(df['Getting Credit - Score'])
-plt.show
 
-plt.hist(df['Getting Credit - Score'])
-plt.show
 
-plt.hist(df['Getting Credit - Score'])
-plt.show
+
+
+
+
+
+
 
 # Removing all the rows that do not contain the word "Score". This allows us to remove noise,
 # focusing specifically on the final score for each category. All the final scores for each category

@@ -18,11 +18,11 @@ If the marker cannot execute your coursework they can't grade it!
 ## Selection of project methodology
 ### Methodology (or combination) selected
 
-The Scenario
-DataFirst, a software development company made up of graduates, is developing a web app for their client, the European 
+#### The Scenario
+DataFirst, a software development company, is developing a web app for their client, the European 
 Commission. The European Commission have created a fund for a set of economic investments aimed at reducing the economic
 inequalities across the European countries. For this plan, The EU Leadership Team has decided to target countries 
-with many barriers to doing business and therefore are the least attractive options for new investments and businesses. 
+with many barriers to doing business and therefore are the least attractive options for new businesses. 
 To make this assessment, they would like to focus specifically on 4 Indicators from World Bank Dataset: Getting Credit,
 Starting a Business, Resolving Insolvency, Trading Across Borders. The European Commission has a vague idea of what 
 the Senior Leaders might find useful to make the investment decision, nevertheless, they do not know what solution would
@@ -117,8 +117,8 @@ measurable and specifically oriented at ensuring growth in less developed nation
 ### Target audience
 
 The target audience is the leadership management board at the European Commission as they would be interested to gain actionable 
-insights from this data. From this web product and the embedded data visualizations they can implement policies an
-initiatives that best address  in nations and problems with disadvantageous business conditions. 
+insights from this data. From this web product and the embedded data visualizations they can implement policies and
+initiatives that best address nations with disadvantageous business conditions. 
 Not only with this data they can make become more specific on the nations that require improvement, but they can also
 drastically improve the impact of their initiatives by addressing the specific problem. As all fields (i.e. Economics, 
 Politics, Environments), all contribute to the ease of doing business, this data targets the whole EU Board of 
@@ -136,18 +136,16 @@ Given the problem statement and the target audience, we assume that these are th
 
 1. Which countries in Europe have performed worse in 2020?
 2. What problems are the worst-performing countries facing?
-3. Has the "Starting a new Business" Score improved over the years for Italy?
-4. What countries have the lowest scores in Getting Credit?
-5. Overall, across the 4 variables, has the ease of doing business improved over the years?
+3. Overall, across the 4 variables, has the ease of doing business improved over the years?
 
 
 Addressing these questions can help the EU understand what problems each of the countries are facing before 
 making an investment. This is very useful because it will allow the EU to come up with a specific investments 
 plan and set of initiatives that best address the country and the problems from a wide variety of different perspectives.
 Rather than focusing only on one problem (i.e. getting credit), this data can offer insights into a wide range of variables. 
-Moreover, as part of the investment decision, it is important to consider whether countries have been improving in a 
-particular area over the years. Deciding to invest and implement new initiatives in a country who has not been
-improving can have a  more significant impact than investing in a country with a low score but that is starting to improve. 
+Moreover, as part of the investment decision, it is important to consider whether countries have been improving over the years. 
+This can be very useful to understand how senior leaders' previous policies have impacted the European Union, addressing
+any outstanding gaps.
 As a result, besides providing the EU board with stronger awareness of EU challenges,  answering these questions will be 
 help the EU Team maximise the impact of their initiatives on the economies of EU countries.
 
@@ -196,6 +194,62 @@ Please add names of your data set files in this repository below, then delete th
 ### Data exploration
 
 [Data Exploration]()
+
+The first step, once having prepared the data, was to explore all the different indicators. In fact, while  the 
+data preparation section allowed us to select the years and countries relevantly to the problem statement, we 
+are now still dealing with many metrics. So, the immediate action was to understand how many unique rows we had with the
+describe () functions to understand how many metrics our dataset had. We could see that initally we had 151 metrics, and 
+with the nunique () function we could see that only 58 of them had a score for a specific cateogory. 
+This meant that all the remaining 93 rows were metrics of other variables (i.e. time, cost) that were used to calculate the score.
+We, therefore decided to keep only the rows containing the word "Score" in the Indicator Name column, avoinding any other irrelevant metric.
+At this point, we could check each unique row with the value functions to understand what each of this 58 metrics were measuring.
+From this activity, we learnt that the focus of EU Leadership Team's problem statement entailed the results of 4 specific rows:"Getting credit (DB15-20 methodology) - Score",
+"Resolving insolvency - Score","Starting a business - Score", "Trading across borders (DB16-20 methodology) - Score. 
+It was clear that we needed to keep only this rows in the dataset, and we managed to achieve this creasting 
+a list of these rows and dropping all the other rows not invluded in this list.
+
+At this point, we were presented with few challenges hindering our ability to plot data.
+Firslty, having the Years (2016,2017,2018,2019,2020) as columns was limiting the amount of data exploration we could do.
+With this format, our primary findings would be related about what happened over the years, nevertheless, an more relant approach to the problem statement
+would be to focus on the indicators, describing them over the countris and years. It was necessarey, then, to convert 
+Becuase we are more interested in the indicators, it was key to transpose them into columns now that we had only 4 of them.
+This way, we could have a view of these indicators by year and the relevant countries, rather than focusing uniquely on the historical trends which is not the EU LT's primary focus. 
+It was possible to do this with firslty by converthing the Years columns (from 1014 to 2020) into rows. Secondly, we turned the labels of the Indicator column as new columns. 
+The second challenge was that, while we had 4 different indicators, it was difficult to benchmark these countries, given the number of years and parameters. 
+Therefore, to summarise the overall performance of a country a new column, overall score, was introduced calculating the average of these for selected indicators.
+
+After checking the data types of the columns and the size of the dataset, we could now complete the data exploration with visualizations
+The first analysis was done using a boxplot of all the indicators to understand whether we had any outliers. From the output, 
+we could see that there were no outliers because all of the scores were within the expected range:0 and 100. 
+While there were a fer less frequent scores away from the average, it was important to keep them because these are part
+of the scores and the ranges, provifing a clear picture of the negatives. Besides looking at outliers, this boxplot is 
+also helpeful to see how the overall distribution for each of the indicatores in Europe.
+Following a general description of the indicators, our first question to answer (identified in the previous section) 
+was the identifying the lowest performing countries in 2020. 
+The first observation is that if we plot the current dataset, we will obtain the visualization of every single observation across all of our dataset.
+Therefore, to obtain more meaningful visualizions,  we would need to plot averages across a more defined dataframe.
+So we splitted the dataset into multiple datasets, where in the first dataset we focucused only on 2020 data. 
+After dropping the "Year" column, we could now plot the average of all the indicatons groupped by the countries. 
+The output comprhesively describes all of the indicators by any of the countries, but it could be cumbersome to interpret 
+so much data in one chart. Therefore, we decided to use Overall Score only to rank countries by the indicators.
+This allowed us to create a third dataframe with only two columns, showing that the worst-performing countries were Luxembourg, Greece, San Marino and Malta.
+At this this point, we could split the dataset, keeping only the rows with the lowest performing countries and dropping the "Year" column. 
+This allowed us to obtain the same chart focusing only on 4 countries to observe each indicator.
+Finally, considering the ladt question identified in the previous section, the last aspect to explore was how indicators changed by year. 
+There was no need to split the data in this case as we plotted the mean of all of the indicators by the Years.
+
+As a result, with the above data exploreation and preparation, we were able to explore the dataset both
+from a Country and Year Perspective. Considering the target audience, problem statements and the assumed questions, this 
+is the best structure for our dataset because we have the flexibility to observe the behabiors of ay of thw variables in relation to the indicators which is the EU's key focus. 
+One of the negatives of this choice is that we had to tradeoff the possibility of doing more advanced data analysis about time (i.e. Time Series of the years). 
+Nevertheless, this is not as relevant as focuins on the indicators, and the chosed data structure still allows us to extrapolate more basic data insights on time.
+
+
+
+
+
+
+
 
 ## Weekly progress reports
 ### Report 1
@@ -261,6 +315,29 @@ List what you plan to do next week (for the coursework project):
 Briefly describe any issues that are impeding your progress (in the coursework project).
 - None
 ### Report 4
+List what you completed or made progress on this week (in the coursework project).
+- Documented and justified the steps in my data preparation code
+- Completed the code for the data exploration
+- Refined the question to be answered relevantly to the target audience and problem statement
+- Added a introductory scenario description to better describe assumptions and context of the project
+- Added Status Reports to the project
+
+
+List what you plan to do next week (for the coursework project):
+- Document Data Exploration Code
+- Refine the Data Exploration Plots and Visualisations
+- Improve formatting and referencing
+- Review and finalise the whole project
+
+
+Briefly describe any issues that are impeding your progress (in the coursework project). 
+- Is answering the questions from the "Business Need" section part of this assessment?
+  I am asking this because, while I have managed to narrow down the data to a manageable size, there are many labels 
+  requiring more advanced visualisation. I am wondering whether it may be worth reducing the dataset even more to 
+  simplify this process. 
+
+
+
 
 ## References
 Use any [referencing style](https://library-guides.ucl.ac.uk/referencing-plagiarism/referencing-styles) that you are
