@@ -93,31 +93,31 @@ entry-level professionals.
 ## Definition of the business need
 ### Problem definition
 
-The European Commission needs to shortlist 3 countries in EU for a significant investment plan aimed at facilitating
-the ease of doing business to reducing inequalities across EU.
+The European Commission needs to shortlist 3 countries in Europe for a significant investment plan aimed at facilitating
+the ease of doing business to reduce inequalities across the EU.
 This is 5 year-long plan that needs to be implemented by 2022 to improve the current economic outlook, 
 creating future opportunities for younger generations. 
 Nevertheless, with the current economic uncertainties and inequalities across Europe, the Commission faces 
-an intense pressure to make a sound investment decision.
+ intense pressure to make a sound investment decision.
 
 This decision represents a problem for the board because investing in the wrong countries would contribute to 
-increased inequalities, widening the gap between the businesses and nations in EU. As a result, the EU predicts 
-that with a widening gap, businesses will avoid investing in poorer countries like Italy where the conditions of 
-doing businesses are more disadvantageous. This, in turn, affects the whole nation and its population limiting its 
+increased inequalities, widening the gap between the businesses and nations in Europe. As a result, the EU predicts 
+that with a widening gap, businesses will avoid investing in poorer countries where the conditions of 
+doing business are more disadvantageous. This, in turn, affects the whole nation and its population limiting its 
 economic growth and opportunities. The EU Commission is specifically assessing 4 metrics (Getting Credit, Starting a 
-Business, Resolving Insolvency Trading across borders)World Bank Dataset, however, they are struggling to translate 
+Business, Resolving Insolvency Trading across borders) from the World Bank Dataset, however, they are struggling to translate 
 this data into actionable business intelligence for senior leaders. 
 
-There have multiple investment occasions in the past across Europe and, this problem arises every time that an
-investment opportunity arise. Thus, through a web product, the EU Commission can visualize clearly the parameters of 
+There have multiple investment occasions in the past across Europe and this problem seems to be a recurring challenge.
+Thus, through this web application, the EU Commission can visualize clearly the parameters of 
 each country. Benchmarking these parameters through data visualizations across the different countries would help 
-Leaders at the EU Commission to objectively map and assess the EU situation. This will make their decisions actionable, 
+Leaders at the EU Commission measure the impact of their policies. This will make their decisions actionable, 
 measurable and specifically oriented at ensuring growth in less developed nations. 
 
 ### Target audience
 
-The target audience is the leadership management board at the European Commission as they would be interested to gain actionable 
-insights from this data. From this web product and the embedded data visualizations they can implement policies and
+The target audience is the leadership team at the European Commission as they would be interested to gain actionable 
+insights from this data. From this web application, they can implement policies and
 initiatives that best address nations with disadvantageous business conditions. 
 Not only with this data they can make become more specific on the nations that require improvement, but they can also
 drastically improve the impact of their initiatives by addressing the specific problem. As all fields (i.e. Economics, 
@@ -126,8 +126,8 @@ Commission, irrespective of the industry each director manage. Thus, the board, 
 new initiatives collaboratively tackling each problem from the respective perspective (legal, economic, environmental).
 
 While each director has an understanding of tech, we are targeting experienced sales professional aged at least over 50 
-years old. Therefore, ease of access and intuitiveness should be our key priorities when  working on the design of the
-app. Moreover, as they are part of the management board, we expect these people to be very busy and accustomed to famous
+years old. Therefore, ease of access and intuitiveness should be our key priorities when working on the design of the
+app. Moreover, as they are part of the management board, we expect these people to be very busy and accustomed to renowned 
 economic journals (i.e. FT). Therefore, results should be presented concisely with clear visualizations. 
 
 ### Questions to be answered using the dataset
@@ -139,14 +139,14 @@ Given the problem statement and the target audience, we assume that these are th
 3. Overall, across the 4 variables, has the ease of doing business improved over the years?
 
 
-Addressing these questions can help the EU understand what problems each of the countries are facing before 
-making an investment. This is very useful because it will allow the EU to come up with a specific investments 
-plan and set of initiatives that best address the country and the problems from a wide variety of different perspectives.
+Addressing these questions can help the Leadership Team understand what problems each of the countries are facing before 
+making an investment. This is very useful because it will allow the EU to come up with a specific investment
+plan that best address the country and the problems from a wide variety of different perspectives.
 Rather than focusing only on one problem (i.e. getting credit), this data can offer insights into a wide range of variables. 
 Moreover, as part of the investment decision, it is important to consider whether countries have been improving over the years. 
 This can be very useful to understand how senior leaders' previous policies have impacted the European Union, addressing
 any outstanding gaps.
-As a result, besides providing the EU board with stronger awareness of EU challenges,  answering these questions will be 
+As a result, besides providing the EU board with stronger awareness of EU challenges, answering these questions will 
 help the EU Team maximise the impact of their initiatives on the economies of EU countries.
 
 ## Data preparation and exploration
@@ -157,92 +157,89 @@ The first step in preparing the data was to have a basic understanding of the da
 after loading the dataset as a dataframe variable, it was essential to print the number and the labels of rows and columns. 
 From the output, it is clear that we are dealing with a very big dataset as we have 43665 rows and 22 columns. 
 The first 4 columns represent categorical data, giving us information about the country and the type of metric the score is based upon. 
-Whereas, the remaining column were numerical representing the score in each year from 2004 to 2020.
+Whereas, the remaining column are numerical representing the score in each year from 2004 to 2020.
 At first glance, and considering the size of the dataset, the only obvious column I could remove was the Indicator Code because it was repeating the preceding column. 
 Nevertheless, another column, Unnamed:21, was automatically created with null values when loading the dataset into the dataframe
-It was necessary to eliminate this column before checking for null values, because dropping rows while maintaining this column would have removed my all dataset. 
+It was necessary to eliminate this column before dealing with null values, because dropping rows while maintaining this column would have removed my whole dataframe. 
 
 While, I was able to remove the null values from the automatically created column, I still needed to check for null values across all the other columns.
-Based on the is.null() output, the current 3 categorical column had 0 null values whereas all the Years columns had null
+Based on the is.null() output, the 3 categorical columns had 0 null values whereas all the "Years" columns (from 2004 to 2020) had null
 values, decreasing with the most recent years. Thus, because the number of null values was significant in years 
 2004 - 2015 (at least above 18,000 with a dataset of 43,000 rows), I decided that the best solution was to remove columns 2004 to 2015.
-Because most of the null values are in the columns that have been drop, whenever we will remove the remaining null 
-values in the remaining columns, we will still be able to deal with significant amount of data which also more relevant 
-and recent to the EU Leadership Team.
-Moreover, replacing the null variables with other values (i.e. mean) was not an option in this scenario because we are 
+As most of the null values are in the columns that have been drop, whenever we will remove the remaining null 
+values for the remaining columns, we will still have a significant amount of data. This will also make our dataset more 
+relevant to the problem statement helping the EU Leaders focus on the most recent data. 
+Moreover, using an imputation technique to fill the missing values (i.e. mean) was not an option in this scenario because we are 
 dealing with scores of multiple indicators. Averaging all the data for a particular year would give us an average that 
-does not specifically represent each category. 
-Finally, given that there were no anomalies from the remaining columns 2016 to 2020, the last step was to remove the 
-remaining null values with dropna().
+does not specifically represent each indicator. 
+Finally, given that there were no anomalies from the remaining columns 2016 to 2020 (using the unique() function), the 
+last step was to remove the remaining null values with dropna().
 
 At this point, we have reduced the dataset to 31263 rows and 8 columns. However, the dataset still has worldwide data 
-which is not yet relevant to the EU Commission. The current dataset does not have any columns that could help us filter 
+which is not relevant to the EU Commission. The current dataset does not have any columns that could help us filter 
 for EU Countries only, however there is a different dataset from the World Bank (DBCountry.csv) with more information on each of this 
-country. After loading this dataset, we notice there are 31 columns and 193 rows. From this dataset, we identify only 
-two columns that we can be useful to our problem: Country Code and Currency Unit. 
+country. After loading this dataset, we noticed that there were 31 columns and 193 rows. From this dataset, we identified only 
+two columns that we could be useful to our problem: Country Code and Currency Unit. 
 We, therefore set the newly created dataframe as only these 2 columns removing the remaining 29. Country Code would serve 
-us as the common column (index) when merging the 2 dataframes, and Currency Unit will allow us to filter only for countries trading with Euros
-Indeed, after removing all other currencies, we have a final dataset of 3315 rows and 9 columns addressing the essential requirements of the EU Commission.
+us as the common column (index) when merging the 2 dataframes, and Currency Unit would allow us to filter only for countries trading with Euros.
+Indeed, after removing all other currencies, we had a final dataset of 3315 rows and 9 columns addressing the minimum requirements of the EU Commission.
 
 
 
 ### Prepared data set
 Please add names of your data set files in this repository below, then delete this instruction text.
-[Original data set]()
-[Prepared data set]()
+[Original data set](DBData.csv)
+[Prepared data set](cleaned_dataset.csv)
 
 ### Data exploration
 
 [Data Exploration]()
 
-The first step, once having prepared the data, was to explore all the different indicators. In fact, while  the 
+The first step, once having prepared the data, was to explore all the different indicators, which represented a metric for a specific area of doing business. In fact, while  the 
 data preparation section allowed us to select the years and countries relevantly to the problem statement, we 
-are now still dealing with many metrics. So, the immediate action was to understand how many unique rows we had with the
-describe () functions to understand how many metrics our dataset had. We could see that initally we had 151 metrics, and 
-with the nunique () function we could see that only 58 of them had a score for a specific cateogory. 
-This meant that all the remaining 93 rows were metrics of other variables (i.e. time, cost) that were used to calculate the score.
-We, therefore decided to keep only the rows containing the word "Score" in the Indicator Name column, avoinding any other irrelevant metric.
-At this point, we could check each unique row with the value functions to understand what each of this 58 metrics were measuring.
-From this activity, we learnt that the focus of EU Leadership Team's problem statement entailed the results of 4 specific rows:"Getting credit (DB15-20 methodology) - Score",
+are now still dealing with many indicators. We, therefore, wanted to understand how many unique rows we had with the
+describe() functions to understand how many indicators our dataset had. Initially, we could see that we had 151 metrics, and 
+with the nunique () function, we could see that only 58 of them had the word "score" for a specific indicator. 
+This meant that all the remaining 93 rows were different metrics (i.e. time, cost) that were used to calculate the score.
+Given that we are only interested in the Score, we decided to remove all other irrelevant metrics (i.e. time, cost) by keeping only the rows containing the word "Score" in the Indicator Name column.
+At this point, we could check each unique row with the value_counts() function to understand what each of this 58 scores were measuring.
+From this activity, we considered that the Leadership Team's focus was related on the results of 4 specific rows:"Getting credit (DB15-20 methodology) - Score",
 "Resolving insolvency - Score","Starting a business - Score", "Trading across borders (DB16-20 methodology) - Score. 
-It was clear that we needed to keep only this rows in the dataset, and we managed to achieve this creasting 
-a list of these rows and dropping all the other rows not invluded in this list.
+It was clear that we needed to keep only these rows in the dataset, and we achieved this creating 
+a list of these rows and dropping all the other rows not included in this list.
 
 At this point, we were presented with few challenges hindering our ability to plot data.
-Firslty, having the Years (2016,2017,2018,2019,2020) as columns was limiting the amount of data exploration we could do.
-With this format, our primary findings would be related about what happened over the years, nevertheless, an more relant approach to the problem statement
-would be to focus on the indicators, describing them over the countris and years. It was necessarey, then, to convert 
-Becuase we are more interested in the indicators, it was key to transpose them into columns now that we had only 4 of them.
-This way, we could have a view of these indicators by year and the relevant countries, rather than focusing uniquely on the historical trends which is not the EU LT's primary focus. 
-It was possible to do this with firslty by converthing the Years columns (from 1014 to 2020) into rows. Secondly, we turned the labels of the Indicator column as new columns. 
-The second challenge was that, while we had 4 different indicators, it was difficult to benchmark these countries, given the number of years and parameters. 
-Therefore, to summarise the overall performance of a country a new column, overall score, was introduced calculating the average of these for selected indicators.
-
-After checking the data types of the columns and the size of the dataset, we could now complete the data exploration with visualizations
+Firstly, having the Years (2016,2017,2018,2019,2020) as columns was limiting the amount of data exploration we could do.
+With this format, our primary findings would be related about what happened over the years, nevertheless, our key variables were the indicators.
+Therefore, it was crucial to transform them as columns to explore their behaviours across countries and years. 
+We could achieve this by converting the Years columns (from 1014 to 2020) into rows of a new column, Year. Subsequently, we turned the rows of the "Indicator Name" column as new columns. 
+The second challenge was that, because we had 4 different indicators, it was difficult to rank the final score of these countries.
+Therefore, to summarise the overall performance of a country, we introduced a new column, overall score, calculating the average of the 4 selected indicators.
+After checking the data types of the columns and the size of the dataset, we could now complete the data exploration with visualizations.
 The first analysis was done using a boxplot of all the indicators to understand whether we had any outliers. From the output, 
-we could see that there were no outliers because all of the scores were within the expected range:0 and 100. 
-While there were a fer less frequent scores away from the average, it was important to keep them because these are part
-of the scores and the ranges, provifing a clear picture of the negatives. Besides looking at outliers, this boxplot is 
-also helpeful to see how the overall distribution for each of the indicatores in Europe.
-Following a general description of the indicators, our first question to answer (identified in the previous section) 
-was the identifying the lowest performing countries in 2020. 
-The first observation is that if we plot the current dataset, we will obtain the visualization of every single observation across all of our dataset.
-Therefore, to obtain more meaningful visualizions,  we would need to plot averages across a more defined dataframe.
-So we splitted the dataset into multiple datasets, where in the first dataset we focucused only on 2020 data. 
-After dropping the "Year" column, we could now plot the average of all the indicatons groupped by the countries. 
-The output comprhesively describes all of the indicators by any of the countries, but it could be cumbersome to interpret 
-so much data in one chart. Therefore, we decided to use Overall Score only to rank countries by the indicators.
-This allowed us to create a third dataframe with only two columns, showing that the worst-performing countries were Luxembourg, Greece, San Marino and Malta.
-At this this point, we could split the dataset, keeping only the rows with the lowest performing countries and dropping the "Year" column. 
-This allowed us to obtain the same chart focusing only on 4 countries to observe each indicator.
-Finally, considering the ladt question identified in the previous section, the last aspect to explore was how indicators changed by year. 
-There was no need to split the data in this case as we plotted the mean of all of the indicators by the Years.
+we could see that there were no outliers because all the scores were within the expected range: 0 and 100. 
+While there were a fer less frequent scores away from the mean, it was important to keep them because these are part
+of the scores and the ranges, providing a clear picture of areas of improvements. Besides looking at outliers, this boxplot is 
+also helpful to describe the overall distribution for each of the indicators in Europe.
 
-As a result, with the above data exploreation and preparation, we were able to explore the dataset both
-from a Country and Year Perspective. Considering the target audience, problem statements and the assumed questions, this 
-is the best structure for our dataset because we have the flexibility to observe the behabiors of ay of thw variables in relation to the indicators which is the EU's key focus. 
-One of the negatives of this choice is that we had to tradeoff the possibility of doing more advanced data analysis about time (i.e. Time Series of the years). 
-Nevertheless, this is not as relevant as focuins on the indicators, and the chosed data structure still allows us to extrapolate more basic data insights on time.
+Considering the questions identified in the Target Audience section, we continued our data exploration identifying the worst-performing countries in 2020.
+Our first plot allowed us to realise that, with the current dataset, we are plotting every single observation. 
+Therefore, to obtain more meaningful visualizations,  we would need to plot averages across a more defined dataframe.
+Thus, we split the dataset into multiple datasets, where in the first dataset we focused only on 2020 data. 
+After dropping the "Year" column, we could now plot the average of all the indicators grouped by the countries. 
+The output comprehensively describes all the indicators by any of the countries, but it could be cumbersome to interpret 
+Therefore, we decided to use Overall Score only to rank countries by the indicators.
+Therefore, using a third dataframe with only two columns, we could see that showing that the worst-performing countries were: Luxembourg, Greece, San Marino and Malta.
+At this point, we kept only the rows with the lowest performing countries in our new dataframe so that we could see all indicators by these 4 countries.
+Finally, the last part of the exploration was Time, providing an example of how indicators changed by year. 
+In this case, there was no need to split the data, and we were able to plot the mean of all the indicators by the Years.
+
+As a result, we were able to explore the dataset both
+from a Country and Year Perspective in relation to the Indicators. Considering the target audience, problem statements and the assumed questions, we believe this is 
+the best structure for our dataset because we have the flexibility to observe the behaviours of the indicators (EU's key focus) across any other parameters. 
+One of the negatives of this choice is that we had to trade off the possibility of doing more advanced Time analysis (i.e. Time Series of the years). 
+We could have achieved this if we decided to keep the Years as our main columns. Nevertheless, Time is not as relevant as 
+focusing on the indicators, and the chosen data structure still allows us to perform some basic visualizations maintaining the Years as one column.
 
 
 

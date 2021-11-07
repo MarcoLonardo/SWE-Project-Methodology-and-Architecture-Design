@@ -1,7 +1,5 @@
 # Write code that explores your data set
 
-#Prepare the data
-
 # Setting Pandas Options so that all rows and columns will be printed in the output
 # First step here is to print all the rows this is important becuase we need to explore the different metrics/indicators and eventusally filter for them
 import pandas as pd
@@ -19,6 +17,7 @@ df['Indicator Name'].describe()
 #Listing all the Unique Rows
 df['Indicator Name'].unique()
 
+# Counting how many obeservations have the value "Score"
 df[df["Indicator Name"].str.contains("Score")].nunique()
 #Double-checking the unique values number / https://stackoverflow.com/questions/45759966/counting-unique-values-in-a-column-in-pandas-dataframe-like-in-qlik/45760042
 df['Indicator Name'].nunique()
@@ -110,6 +109,7 @@ plt.show()
 df3 = df[['Country Name', 'Overall Score']]
 # Plotting the average of the overall scores by each country
 df3.groupby(['Country Name']).agg(['mean']).plot.bar()
+plt.show()
 
 #Creating a new dataframe only containing 2020 values
 df4 = df[df["Year"].str.contains("2020")]
