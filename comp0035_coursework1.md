@@ -14,6 +14,7 @@ instructions to be followed to run your coursework.
 
 If the marker cannot execute your coursework they can't grade it!
 
+In my data exploration, I have imported the matplot library. To ensure that this library is imported, I installed the matplotlib package by navigating to Settings and selecting the Python Intepreter for my project.
 
 ## Selection of project methodology
 ### Methodology (or combination) selected
