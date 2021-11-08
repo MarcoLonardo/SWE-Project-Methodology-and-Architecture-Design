@@ -131,6 +131,9 @@ years old. Therefore, ease of access and intuitiveness should be our key priorit
 app. Moreover, as they are part of the management board, we expect these people to be very busy and accustomed to renowned 
 economic journals (i.e. FT). Therefore, results should be presented concisely with clear visualizations. 
 
+![image](https://user-images.githubusercontent.com/64501760/140772961-4128350f-3fc6-4654-a7ab-8f2f8bbd1b01.png)
+
+
 ### Questions to be answered using the dataset
 
 Given the problem statement and the target audience, we assume that these are the type of questions this project aims to answer:
@@ -223,17 +226,51 @@ While there were a fer less frequent scores away from the mean, it was important
 of the scores and the ranges, providing a clear picture of areas of improvements. Besides looking at outliers, this boxplot is 
 also helpful to describe the overall distribution for each of the indicators in Europe.
 
+<p align="center">
+  <img width="640" height="480" src="https://user-images.githubusercontent.com/64501760/140777837-28329963-37ed-44f1-b319-884992cc3823.png">
+</p>
+
 Considering the questions identified in the Target Audience section, we continued our data exploration identifying the worst-performing countries in 2020.
 Our first plot allowed us to realise that, with the current dataset, we are plotting every single observation. 
+
+<p align="center">
+  <img width="640" height="480" src="https://user-images.githubusercontent.com/64501760/140779824-2129c7a9-9a3f-40f9-9651-a79100d28925.png">
+</p>
+
 Therefore, to obtain more meaningful visualizations,  we would need to plot averages across a more defined dataframe.
 Thus, we split the dataset into multiple datasets, where in the first dataset we focused only on 2020 data. 
 After dropping the "Year" column, we could now plot the average of all the indicators grouped by the countries. 
+
+<p align="center">
+  <img width="640" height="480" src="https://user-images.githubusercontent.com/64501760/140780071-646ae53c-4993-4e07-8a29-be708f70bea7.png">
+</p>
+
 The output comprehensively describes all the indicators by any of the countries, but it could be cumbersome to interpret 
 Therefore, we decided to use Overall Score only to rank countries by the indicators.
 Therefore, using a third dataframe with only two columns, we could see that showing that the worst-performing countries were: Luxembourg, Greece, San Marino and Malta.
+
+<p align="center">
+  <img width="640" height="480" src="https://user-images.githubusercontent.com/64501760/140779991-41c27c78-da5c-452c-83bc-9977d9b948d8.png">
+</p>
+
 At this point, we kept only the rows with the lowest performing countries in our new dataframe so that we could see all indicators by these 4 countries.
+
+
+<p align="center">
+  <img width="640" height="480" src="https://user-images.githubusercontent.com/64501760/140779677-7d838e45-5c1f-4814-9bf5-d95e8506e05e.png">
+</p>
+
+
 Finally, the last part of the exploration was Time, providing an example of how indicators changed by year. 
 In this case, there was no need to split the data, and we were able to plot the mean of all the indicators by the Years.
+
+
+<p align="center">
+  <img width="640" height="480" src="https://user-images.githubusercontent.com/64501760/140779172-ed8fce82-d23a-41bf-a53d-3df70b9ba22c.png">
+</p>
+
+
+
 
 As a result, we were able to explore the dataset both
 from a Country and Year Perspective in relation to the Indicators. Considering the target audience, problem statements and the assumed questions, we believe this is 
