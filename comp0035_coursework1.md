@@ -197,7 +197,7 @@ Indeed, after removing all other currencies, we had a final dataset of 3315 rows
 
 ### Data exploration
 
-[Data Exploration]()
+[Data Exploration](data_exploration.py)
 
 The first step, once having prepared the data, was to explore all the different indicators, which represented a metric for a specific area of doing business. In fact, while  the 
 data preparation section allowed us to select the years and countries relevantly to the problem statement, we 
