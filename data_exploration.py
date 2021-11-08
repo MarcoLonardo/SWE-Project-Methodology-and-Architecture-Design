@@ -101,7 +101,7 @@ df2 =df[df["Year"].str.contains("2020")]
 # Dropping the column year so that we can explore the avarage of all the indicators by the individual countries
 df2 =df2.drop('Year',1)
 
-# Plotting the average of all indicators and grouping these by the countries
+# Plotting the average of all indicators and grouping these by the countries / https://realpython.com/pandas-python-explore-dataset/#visualizing-your-pandas-dataframe
 df2.groupby(['Country Name']).agg(['mean']).plot.bar()
 plt.show()
 

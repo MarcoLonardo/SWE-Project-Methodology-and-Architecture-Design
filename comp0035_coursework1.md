@@ -20,19 +20,20 @@ If the marker cannot execute your coursework they can't grade it!
 
 #### The Scenario
 DataFirst, a software development company, is developing a web app for their client, the European 
-Commission. The European Commission have created a fund for a set of economic investments aimed at reducing the economic
+Commission. We are assuming that the European Commission has created a fund for a set of economic investments aimed at reducing the economic
 inequalities across the European countries. For this plan, The EU Leadership Team has decided to target countries 
 with many barriers to doing business and therefore are the least attractive options for new businesses. 
-To make this assessment, they would like to focus specifically on 4 Indicators from World Bank Dataset: Getting Credit,
-Starting a Business, Resolving Insolvency, Trading Across Borders. The European Commission has a vague idea of what 
-the Senior Leaders might find useful to make the investment decision, nevertheless, they do not know what solution would
-be optimal to have the best interpretation of business insights.
-The DataFirst Team
+The European Commission has a vague idea of what 
+the Senior Leaders might find useful to make the investment decision, nevertheless, they are relying on DataFirst to 
+explore the different feasible options and realise what is the best business intelligence solution.
+We are assuming that The DataFirst Team is made up by a small team of students with relevant internship-level experience in the Scrum Methodology. 
+They have been asked to have the final web application ready within a fixed timeframe of 4 months. Nevertheless, they
+have agreed with the European Board to frequently review the work to adapt to the undefined requirements.
 
-Choosing an Agile methodology for this project will be essential given the business criteria identified in the next 
-section. In particular, we will focus on the Scrum Methodology as it will equip the team with a rigorous but flexible 
-process applicable for data science. This will be important, because not only, we are looking to develop a web 
-application, but we also want to provide exploratory data insights in the form of visualizations and reports.
+
+For this particular scenario, it was important to select a software engineering methodology because the main deliverable of the project is a web application. 
+Nevertheless, it was also important to consider a methodology that would integrate flexibly and adequately with data science given that at the heart of the web applications we have insights. 
+Thus, considering specific selection criteria, we will focus on the Scrum Methodology because it allows the team to develop a web application, while remaining flexible and agile to data science (Scrum for Data Science, n.d.).
 
 
 ### Selection criteria and justification of selection
@@ -155,11 +156,11 @@ help the EU Team maximise the impact of their initiatives on the economies of EU
 
 The first step in preparing the data was to have a basic understanding of the dataset. Therefore, 
 after loading the dataset as a dataframe variable, it was essential to print the number and the labels of rows and columns. 
-From the output, it is clear that we are dealing with a very big dataset as we have 43665 rows and 22 columns. 
+From the output, it is clear that we are dealing with a very big dataset as we had 43665 rows and 22 columns. 
 The first 4 columns represent categorical data, giving us information about the country and the type of metric the score is based upon. 
 Whereas, the remaining column are numerical representing the score in each year from 2004 to 2020.
 At first glance, and considering the size of the dataset, the only obvious column I could remove was the Indicator Code because it was repeating the preceding column. 
-Nevertheless, another column, Unnamed:21, was automatically created with null values when loading the dataset into the dataframe
+Nevertheless, another column, Unnamed:21, was automatically created with null values when loading the dataset into the dataframe.
 It was necessary to eliminate this column before dealing with null values, because dropping rows while maintaining this column would have removed my whole dataframe. 
 
 While, I was able to remove the null values from the automatically created column, I still needed to check for null values across all the other columns.
@@ -337,5 +338,6 @@ Briefly describe any issues that are impeding your progress (in the coursework p
 
 
 ## References
+Data Science Process Alliance. n.d. Scrum for Data Science. [online] Available at: <https://www.datascience-pm.com/scrum/https://www.datascience-pm.com/scrum/> [Accessed 8 November 2021].
 Use any [referencing style](https://library-guides.ucl.ac.uk/referencing-plagiarism/referencing-styles) that you are
 used to using in your course.
