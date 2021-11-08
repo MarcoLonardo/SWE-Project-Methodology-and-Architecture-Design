@@ -62,7 +62,7 @@ df.rename(columns={
     'Resolving insolvency - Score': 'Resolving insolvency - Score',
 }, inplace=True)
 
-# Create a new parameter as the mean of the 4 indicators. Based on code written by Alex on Stack Overflow at /
+# Create a new parameter as the mean of the 4 indicators. Based on code written by Alex on Stack Overflow at 
 # https://stackoverflow.com/questions/48366506/calculate-new-column-as-the-mean-of-other-columns-pandas/48366525
 # Accessed 03/11/2021
 df['Overall Score'] = df[['Getting Credit - Score', 'Starting a business - Score', 'Trading across borders - Score',
@@ -88,7 +88,7 @@ df2 = df[df["Year"].str.contains("2020")]
 df2 = df2.drop('Year', 1)
 
 # Plot the average of all indicators and group them by country. Adapted from code written by Reka Horvath
-# on the Real Python blog at / https://realpython.com/pandas-python-explore-dataset/#visualizing-your-pandas
+# on the Real Python blog at https://realpython.com/pandas-python-explore-dataset/#visualizing-your-pandas
 # -dataframe. Accessed 05/11/2021
 df2.groupby(['Country Name']).agg(['mean']).plot.bar()
 plt.show()
