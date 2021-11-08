@@ -245,9 +245,9 @@ After dropping the "Year" column, we could now plot the average of all the indic
   <img width="640" height="480" src="https://user-images.githubusercontent.com/64501760/140780071-646ae53c-4993-4e07-8a29-be708f70bea7.png">
 </p>
 
-The output comprehensively describes all the indicators by any of the countries, but it could be cumbersome to interpret 
+The output comprehensively describes all the indicators by any of the countries, but it could be cumbersome to interpret the chart.
 Therefore, we decided to use Overall Score only to rank countries by the indicators.
-Therefore, using a third dataframe with only two columns, we could see that showing that the worst-performing countries were: Luxembourg, Greece, San Marino and Malta.
+Therefore, using a third dataframe with only two columns, we could see that the worst-performing countries were: Luxembourg, Greece, San Marino and Malta.
 
 <p align="center">
   <img width="640" height="480" src="https://user-images.githubusercontent.com/64501760/140779991-41c27c78-da5c-452c-83bc-9977d9b948d8.png">
@@ -261,7 +261,7 @@ At this point, we kept only the rows with the lowest performing countries in our
 </p>
 
 
-Finally, the last part of the exploration was Time, providing an example of how indicators changed by year. 
+Finally, the last part of the exploration was Time, providing an example of how indicators changed by year. Indeed, even though we decided to tranform all the years as rows, we still have the opportunity to perform some basic data visualization.
 In this case, there was no need to split the data, and we were able to plot the mean of all the indicators by the Years.
 
 
