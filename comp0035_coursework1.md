@@ -160,7 +160,7 @@ help the EU Team maximise the impact of their initiatives on the economies of EU
 
 The first step in preparing the data was to have a basic understanding of the dataset. Therefore, 
 after loading the dataset as a dataframe variable, it was essential to print the number and the labels of rows and columns. 
-From the output, it is clear that we are dealing with a very big dataset as we had 43665 rows and 22 columns. 
+From the output, it was clear that we were dealing with a very big dataset as we had 43665 rows and 22 columns. 
 The first 4 columns represent categorical data, giving us information about the country and the type of metric the score is based upon. 
 Whereas, the remaining column are numerical representing the score in each year from 2004 to 2020.
 At first glance, and considering the size of the dataset, the only obvious column I could remove was the Indicator Code because it was repeating the preceding column. 
@@ -170,19 +170,19 @@ It was necessary to eliminate this column before dealing with null values, becau
 While, I was able to remove the null values from the automatically created column, I still needed to check for null values across all the other columns.
 Based on the is.null() output, the 3 categorical columns had 0 null values whereas all the "Years" columns (from 2004 to 2020) had null
 values, decreasing with the most recent years. Thus, because the number of null values was significant in years 
-2004 - 2015 (at least above 18,000 with a dataset of 43,000 rows), I decided that the best solution was to remove columns 2004 to 2015.
-As most of the null values are in the columns that have been drop, whenever we will remove the remaining null 
+2004 - 2015 (at least above 18,800 with a dataset of 43,000 rows), I decided that the best solution was to remove columns 2004 to 2015.
+As most of the null values were in the columns that have been dropped, whenever we will remove the remaining null 
 values for the remaining columns, we will still have a significant amount of data. This will also make our dataset more 
 relevant to the problem statement helping the EU Leaders focus on the most recent data. 
 Moreover, using an imputation technique to fill the missing values (i.e. mean) was not an option in this scenario because we are 
 dealing with scores of multiple indicators. Averaging all the data for a particular year would give us an average that 
 does not specifically represent each indicator. 
-Finally, given that there were no anomalies from the remaining columns 2016 to 2020 (using the unique() function), the 
+Finally, (using the unique() function), we could see no anomalies in the remaining columns (from 2016 to 2020), therefore, the
 last step was to remove the remaining null values with dropna().
 
-At this point, we have reduced the dataset to 31263 rows and 8 columns. However, the dataset still has worldwide data 
-which is not relevant to the EU Commission. The current dataset does not have any columns that could help us filter 
-for EU Countries only, however there is a different dataset from the World Bank (DBCountry.csv) with more information on each of this 
+At this point, we have reduced the dataset to 31263 rows and 8 columns. However, the dataset still had worldwide data 
+which is not relevant to the EU Commission. The current dataset did not have any columns that could help us filter 
+for EU Countries only, however there was a different dataset from the World Bank (DBCountry.csv) with more information on each of this 
 country. After loading this dataset, we noticed that there were 31 columns and 193 rows. From this dataset, we identified only 
 two columns that we could be useful to our problem: Country Code and Currency Unit. 
 We, therefore set the newly created dataframe as only these 2 columns removing the remaining 29. Country Code would serve 
@@ -192,7 +192,6 @@ Indeed, after removing all other currencies, we had a final dataset of 3315 rows
 
 
 ### Prepared data set
-Please add names of your data set files in this repository below, then delete this instruction text.
 [Original data set](DBData.csv)
 [Prepared data set](cleaned_dataset.csv)
 
@@ -202,30 +201,30 @@ Please add names of your data set files in this repository below, then delete th
 
 The first step, once having prepared the data, was to explore all the different indicators, which represented a metric for a specific area of doing business. In fact, while  the 
 data preparation section allowed us to select the years and countries relevantly to the problem statement, we 
-are now still dealing with many indicators. We, therefore, wanted to understand how many unique rows we had with the
-describe() functions to understand how many indicators our dataset had. Initially, we could see that we had 151 metrics, and 
+were still dealing with many indicators. Therefore, with the describe() function we wanted to understand all the unique indicators our dataset had.
+Initially, we could see that we had 151 metrics, and 
 with the nunique () function, we could see that only 58 of them had the word "score" for a specific indicator. 
 This meant that all the remaining 93 rows were different metrics (i.e. time, cost) that were used to calculate the score.
 Given that we are only interested in the Score, we decided to remove all other irrelevant metrics (i.e. time, cost) by keeping only the rows containing the word "Score" in the Indicator Name column.
-At this point, we could check each unique row with the value_counts() function to understand what each of this 58 scores were measuring.
-From this activity, we considered that the Leadership Team's focus was related on the results of 4 specific rows:"Getting credit (DB15-20 methodology) - Score",
+At this point, we could check each unique row with the value_counts() function to understand what each of this 58 scores was measuring.
+From this activity, we considered that the Leadership Team's focus was related to the results of 4 specific rows:"Getting credit (DB15-20 methodology) - Score",
 "Resolving insolvency - Score","Starting a business - Score", "Trading across borders (DB16-20 methodology) - Score. 
-It was clear that we needed to keep only these rows in the dataset, and we achieved this creating 
-a list of these rows and dropping all the other rows not included in this list.
+Thus, it was clear that we needed to keep only these rows in the dataset, and we achieved this creating 
+a list of the relevant rows and dropping all the other rows not included in this list.
 
 At this point, we were presented with few challenges hindering our ability to plot data.
 Firstly, having the Years (2016,2017,2018,2019,2020) as columns was limiting the amount of data exploration we could do.
-With this format, our primary findings would be related about what happened over the years, nevertheless, our key variables were the indicators.
+With this format, our primary findings would be related to what happened over the years, nevertheless, our key variables were the indicators.
 Therefore, it was crucial to transform them as columns to explore their behaviours across countries and years. 
 We could achieve this by converting the Years columns (from 1014 to 2020) into rows of a new column, Year. Subsequently, we turned the rows of the "Indicator Name" column as new columns. 
-The second challenge was that, because we had 4 different indicators, it was difficult to rank the final score of these countries.
-Therefore, to summarise the overall performance of a country, we introduced a new column, overall score, calculating the average of the 4 selected indicators.
+The second challenge was that, because we had 4 different indicators, it was difficult to rank all of these countries.
+Therefore, to summarise our 4 indicators we introduced a new column, overall score, calculating the average of the 4 selected indicators.
 After checking the data types of the columns and the size of the dataset, we could now complete the data exploration with visualizations.
 The first analysis was done using a boxplot of all the indicators to understand whether we had any outliers. From the output, 
 we could see that there were no outliers because all the scores were within the expected range: 0 and 100. 
-While there were a fer less frequent scores away from the mean, it was important to keep them because these are part
-of the scores and the ranges, providing a clear picture of areas of improvements. Besides looking at outliers, this boxplot is 
-also helpful to describe the overall distribution for each of the indicators in Europe.
+While there were a few less frequent scores away from the mean, it was important to keep them because they provided a clear picture of areas of improvements. 
+Besides looking at outliers, this boxplot was 
+also helpful to describe the overall distribution of each of the indicators in Europe.
 
 <p align="center">
   <img width="640" height="480" src="https://user-images.githubusercontent.com/64501760/140777837-28329963-37ed-44f1-b319-884992cc3823.png">
