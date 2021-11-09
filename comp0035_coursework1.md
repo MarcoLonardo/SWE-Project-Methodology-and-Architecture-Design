@@ -57,7 +57,7 @@ Methodology. This is because we are assuming that the EU Commission set a hard d
 And given that the dataset is static and will not change, it is important to develop the application within this fixed timeframe becuase it is unlikely that it will be used for any other purposes. 
 The Scrum methodology would be very useful in this scenario because it increases the likelihood of delivering quality work with challenging deadlines. 
 This is because Scrum is based upon Empiricism, Lean Thinking and Iterative development (Iqbal, 2021). With Empiricism, teams can make decision on what is known and, as a result, the team can estimate the different variables of a successuful projects (i.e. time, quality). This allows the team to consider feasibility, ensuring that the right resources are allocated to complete the project within the deadline. Lean Thinking is also useful because it helps the team focus on the essential by ranking all the items on the Product Backlog by priority. Finally, Iterative Development is helpul even for this criteria. This is becuase, leveraging re-usable work frequently, we avoid creating new irrelevant work which will save us time with our deliverables (Iqbal, 2021).
-Moreover, it also important to consider that the nature of sprints allows the team to break down the product development stages with a fixed duration (Baffa, 2018). This fixed candence is very helpful in planning for our deadline and it ensures that by a set number of weeks, we will be able to deliver a minimum viable product. 
+Moreover, it also important to consider that the nature of sprints allows the team to timebox tasks, allocating to each key activity a fixed duration (6 Main Principles of Scrum Methodology – QATestLab, 2020). This fixed candence is very helpful in planning for our deadline and it ensures that by a set number of weeks, we will be able to deliver a minimum viable product. 
 
 Moreover, it was also important to consider team location to understand whether there could be any blockers to our project. 
 Working remotely as international students from all over the world could be a 
@@ -70,18 +70,19 @@ best address remote workers (Scrum for Data Science - Data Science Process Allia
 accountable for anomalies and change. This is very important to our project because regardless of the location, everyone
 is responsible for the progress and can rapidly adapt to change.
 
-Finally, it was important to consider the level of experience the team had working together and with the Scrum 
-Methodology. As a group of students with limited work and methodology experience, it was important to consider a method
-that not only that would ease collaboration, but would elicit quick feedback, support and transparency. Within the team,
-the Scrum Method offers many learning and feedback opportunities. At the end of each sprint and throughout 
-the whole product development, the team can review the incremental product with the customer to elicit feedback. 
-This would allow an inexperienced team in the software industry to quickly re-address customers needs. 
-Moreover, there is also an opportunity to share feedback internally in the team with sprint retrospectives where the 
-team can reflect on areas of improvement. Finally, as Scrum is a well-known industry and the most popular agile 
+Finally, another important criteria to consider was the level of work experience of our team considering that we are a group of students.
+Despite our experience and knowledge in Scrum, we are not experienced professionals and we never worked together as team.
+Therefore it was important to adopt a method
+that not only that would ease collaboration, but would elicit feedback, support and transparency.
+As an agile methodology, ongoing evaluation and feedback one of the underlying principles in Scrum (6 Main Principles of Scrum Methodology – QATestLab, 2020). Besides the daily scrum ensuring frequent interaction, this is achieved mainly with the Sprint Reviews and Retrospectives. In the Sprint review we can proactively seek customers' feedback over the work so that we quickly rectify any mistakes.
+Sprint retrospectives offer an opportunity to share feedback interanly within the team. This can be very useful to reflect at end of the sprint and plan what to improve for the next one. 
+
+
+Finally, as Scrum is a well-known industry and the most popular agile 
 methodology, support and documentation are widely available. Together with ongoing feedback, they make Scrum ideal for 
 entry-level professionals.
 
-Dealing with data, one of the challenges I am expecting from the Scrum methodology is defining User Stories. This is because,
+One of the potential challenges I am expecting from the Scrum methodology is defining User Stories. This is because, when dealing with data, the scope of the research is very wide and we are expeting this scope to change. Therefore, it will be difficult to 
 Another final aspect to consider is, 
 
 ## Definition of the business need
@@ -372,5 +373,5 @@ Data Science Process Alliance. n.d. Scrum for Data Science. [online] Available a
 Thompson, K., n.d. When to Use Scrum? - Cprime. [online] Cprime. Available at: <https://www.cprime.com/resources/blog/when-to-use-scrum/> [Accessed 9 November 2021].
 Iqbal, M., 2021. Can Scrum Work for Hard Deadlines?. [online] Scrum.org. Available at: <https://www.scrum.org/resources/blog/can-scrum-work-hard-deadlines> [Accessed 9 November 2021].
 Data Science Process Alliance. n.d. CRISP-DM - Data Science Process Alliance. [online] Available at: <https://www.datascience-pm.com/crisp-dm-2/> [Accessed 9 November 2021].
-Baffa, T., 2018. What happens to the deadlines in Scrum?. [online] Scrum.org. Available at: <https://www.scrum.org/forum/scrum-forum/25794/what-happens-deadlines-scrum> [Accessed 9 November 2021].
+Qatestlab.com. 2020. 6 Main Principles of Scrum Methodology – QATestLab. [online] Available at: <https://qatestlab.com/resources/knowledge-center/six-scrum-principles/> [Accessed 9 November 2021].
 Schwaber, K. and Sutherland, J., 2020. Scrum Guide | Scrum Guides. [online] Scrumguides.org. Available at: <https://scrumguides.org/scrum-guide.html> [Accessed 9 November 2021].
