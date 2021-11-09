@@ -43,32 +43,30 @@ complexity. Selecting a flexible methodology in this regard,  was crucial becaus
 vary depending on the key findings in the dataset and customer's feedback. With Scrum, we have the opportunity to rectify mistakes quckly 
 both in the Software Engineering and Data Science domains, regardless of the challenges presented by the dataset 
 (Top 12 Software Development Methodologies & its Advantages & Disadvantages, 2021).
-Scrum is helpuful in this in this scenario because, based on the ongoing findings and feedback, the team to plan flexibly with 
-sprint plans (Scrum for Data Science - Data Science Process Alliance, n.d.). This is an opportunity to ensure that we remain flexible 
+Scrum is helpuful in this in this scenario because, based on the ongoing findings and feedback, the team can plan flexibly with 
+sprint plans (Scrum for Data Science - Data Science Process Alliance, n.d.). Sprint plans are an opportunity to ensure that we remain flexible 
 and that the final product greatly addresses the expectations.
-Moreover, given its cyclical nature, working on incremental improvements is easy with Scrum and it would allows us to provide more value (Thompson, n.d.).
-Becuase the EU Team does not have a clear idea of the outcome, incremental improvements not only represent a way for the team to reduce the scope of data research, but is also a way to provide significant value. This makes Scrum integrable with data science, especially in this project becuase the end product only requires us to do some data visualuzations. As a result, we can answer data science questions without having to invest unnecessary time and 
+Moreover, given its cyclical nature, Scrum offers the opportunity to focus on incremental improvements which would allow us to provide
+significant value (Thompson, n.d.). With this Iterative development method (Iqbal, 2021), we can quickly narrow down the scope of the data questions with incresingly more meaninful increments. This also prevents the team from wasting time because all the work is useful to making the next sprints more relevant.
+This makes Scrum integrable with data science, especially in this project becuase the end product only requires us to deliver data visualuzations on the app. As a result, we can iterate and answer multiple data science questions without having to invest unnecessary time and 
 resources that more rigid data science methodologies (i.e. CRISP-DM) would require in the modelling phase 
 (CRISP-DM - Data Science Process Alliance, n.d.). With Scrum, this means that despite the uncertain requirements, we can exceed expectations with lower development costs compared to more complex and structured data science processes.
 
-Secondly, the expected lifetime of the web application was an important criterion in selecting the Agile 
-Methodology for this project. The main assumption is that the web application will be developed for a specific purpose
-where data visualization will help the client answer questions on their business. As the data is static and will not 
-change, we are not expecting the web app to last years and it should, therefore, be developed in a fixed timeframe with 
-a pre-determined set of resources. The Agile methodology would be very useful in this scenario because it is an 
-efficient method to deliver quality work in a scheduled time. This is mainly due to the nature of sprints that allow 
-the team to break down the product development in mini projects each with a fixed duration of one month.
-The Agile process is well-suited for this situation because we can flexibly change our requirements over the whole 
-lifecycle, but it still allows us to deliver incremental results in a fixed time.
+Secondly, the expected lifetime of the web application was an important criterion in selecting the Scrum 
+Methodology. This is because we are assuming that the EU Commission set a hard deadline of 4 months for the web application to be completed. 
+And given that the dataset is static and will not change, it is important to develop the application within this fixed timeframe becuase it is unlikely that it will be used for any other purposes. 
+The Scrum methodology would be very useful in this scenario because it increases the likelihood of delivering quality work with challenging deadlines. 
+This is because Scrum is based upon Empiricism, Lean Thinking and Iterative development (Iqbal, 2021). With Empiricism, teams can make decision on what is known and, as a result, the team can estimate the different variables of a successuful projects (i.e. time, quality). This allows the team to consider feasibility, ensuring that the right resources are allocated to complete the project within the deadline. Lean Thinking is also useful because it helps the team focus on the essential by ranking all the items on the Product Backlog by priority. Finally, Iterative Development is helpul even for this criteria. This is becuase, leveraging re-usable work frequently, we avoid creating new irrelevant work which will save us time with our deliverables (Iqbal, 2021).
+Moreover, it also important to consider that the nature of sprints allows the team to break down the product development stages with a fixed duration (Baffa, 2018). This fixed candence is very helpful in planning for our deadline and it ensures that by a set number of weeks, we will be able to deliver a minimum viable product. 
 
-Moreover, another important criterion was determining any risks that could block member of the teams working together. 
-Working remotely as international students from all over the world with limited team and work experience could be a 
-challenge to the client's rapidly changing requirements. With these risks in mind, the Agile methodology offers the best 
-balance between working independently while ensuring a regular work cadence. Not only this ensures that all members 
+Moreover, it was also important to consider team location to understand whether there could be any blockers to our project. 
+Working remotely as international students from all over the world could be a 
+challenge to the client's rapidly changing requirements. With these risks in mind, the Scrum methodology offers a good 
+balance between work indipendence and a regular work engagement. Not only this ensures that all members 
 can accomplish objectives autonomously, but it also guarantees that all members share their updates constantly with 
 the team. This is achieved through the daily scrums or stand-ups where all the members are asked to 
-share their progress and future plans. Moreover, the three pillars upon which the Agile methodology is built 
-best address remote workers. Transparency, inspection and adaption pose emphasis keeping each other 
+share their progress and future plans (Schwaber and Sutherland, 2020). Moreover, the three pillars upon which the Agile methodology is built 
+best address remote workers (Scrum for Data Science - Data Science Process Alliance, n.d.). Transparency, inspection and adaption emphasize keeping each other 
 accountable for anomalies and change. This is very important to our project because regardless of the location, everyone
 is responsible for the progress and can rapidly adapt to change.
 
@@ -372,4 +370,7 @@ Briefly describe any issues that are impeding your progress (in the coursework p
 Custom Software Development & Enterprise Mobile Apps. 2021. Top 12 Software Development Methodologies & its Advantages & Disadvantages. [online] Available at: <https://www.tatvasoft.com/blog/top-12-software-development-methodologies-and-its-advantages-disadvantages/> [Accessed 9 November 2021].
 Data Science Process Alliance. n.d. Scrum for Data Science. [online] Available at: <https://www.datascience-pm.com/scrum/https://www.datascience-pm.com/scrum/> [Accessed 8 November 2021].
 Thompson, K., n.d. When to Use Scrum? - Cprime. [online] Cprime. Available at: <https://www.cprime.com/resources/blog/when-to-use-scrum/> [Accessed 9 November 2021].
+Iqbal, M., 2021. Can Scrum Work for Hard Deadlines?. [online] Scrum.org. Available at: <https://www.scrum.org/resources/blog/can-scrum-work-hard-deadlines> [Accessed 9 November 2021].
 Data Science Process Alliance. n.d. CRISP-DM - Data Science Process Alliance. [online] Available at: <https://www.datascience-pm.com/crisp-dm-2/> [Accessed 9 November 2021].
+Baffa, T., 2018. What happens to the deadlines in Scrum?. [online] Scrum.org. Available at: <https://www.scrum.org/forum/scrum-forum/25794/what-happens-deadlines-scrum> [Accessed 9 November 2021].
+Schwaber, K. and Sutherland, J., 2020. Scrum Guide | Scrum Guides. [online] Scrumguides.org. Available at: <https://scrumguides.org/scrum-guide.html> [Accessed 9 November 2021].
