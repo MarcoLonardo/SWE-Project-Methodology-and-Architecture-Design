@@ -75,15 +75,11 @@ Despite our experience and knowledge in Scrum, we are not experienced profession
 Therefore it was important to adopt a method
 that not only that would ease collaboration, but would elicit feedback, support and transparency.
 As an agile methodology, ongoing evaluation and feedback one of the underlying principles in Scrum (6 Main Principles of Scrum Methodology – QATestLab, 2020). Besides the daily scrum ensuring frequent interaction, this is achieved mainly with the Sprint Reviews and Retrospectives. In the Sprint review we can proactively seek customers' feedback over the work so that we quickly rectify any mistakes.
-Sprint retrospectives offer an opportunity to share feedback interanly within the team. This can be very useful to reflect at end of the sprint and plan what to improve for the next one. 
+Sprint retrospectives offer an opportunity to share feedback interanly within the team. This can be very useful to reflect at end of the sprint and plan what to improve for the next one. One potential challenge I am expecting in this perspective is that as entry-level professionals, our previous experience in the Scrum methodology as interns might not be sufficient to manage an entire project. Therefore, while Scrums empowers us to respond to change quickly, one potential trade-off is that it does not provide us with predictability and structure that a more rigid process (i.e. Waterfall) would (The Pros and Cons of Waterfall Methodology, n.d.).
+Nevertheless, Scrum is one of the most popular  
+methodologies with support and documentation widely available (Scrum for Data Science - Data Science Process Alliance, n.d.). 
+Together with ongoing feedback, Scrum can create a supportive environment allowing even entry-level professionals learn and adapt faster.
 
-
-Finally, as Scrum is a well-known industry and the most popular agile 
-methodology, support and documentation are widely available. Together with ongoing feedback, they make Scrum ideal for 
-entry-level professionals.
-
-One of the potential challenges I am expecting from the Scrum methodology is defining User Stories. This is because, when dealing with data, the scope of the research is very wide and we are expeting this scope to change. Therefore, it will be difficult to 
-Another final aspect to consider is, 
 
 ## Definition of the business need
 ### Problem definition
@@ -112,20 +108,19 @@ measurable and specifically oriented at ensuring growth in less developed nation
 ### Target audience
 
 The target audience is the leadership team at the European Commission as they would be interested to gain actionable 
-insights from this data. From this web application, they can implement policies and
-initiatives that best address nations with disadvantageous business conditions. 
-Not only with this data they can make become more specific on the nations that require improvement, but they can also
-drastically improve the impact of their initiatives by addressing the specific problem. As all fields (i.e. Economics, 
-Politics, Environments), all contribute to the ease of doing business, this data targets the whole EU Board of 
-Commission, irrespective of the industry each director manage. Thus, the board, our target audience, can jointly work on
-new initiatives collaboratively tackling each problem from the respective perspective (legal, economic, environmental).
+insights from the World Bank dataset. Using the web application, they can implement policies and
+initiatives that best address nations with disadvantageous business conditions. This data would help the EU team enchance the impact of the investment plan
+with more specific policies helping the right countries solve the right problems to address their inequalities. As a result, the leadership team would benefit from a more positive recongition by the press, a more impactful work and a less difficult experience in argumenting their investment decision with objective data.
 
-While each director has an understanding of tech, we are targeting experienced sales professional aged at least over 50 
-years old. Therefore, ease of access and intuitiveness should be our key priorities when working on the design of the
-app. Moreover, as they are part of the management board, we expect these people to be very busy and accustomed to renowned 
-economic journals (i.e. FT). Therefore, results should be presented concisely with clear visualizations. 
+Our aim is to target the whole leadership team, regardless of they field they work in. This is becuase the data spans different industries and requires the expertise of different leaders. This means that, with our solution, EU Board can work on new initiatives collaboratively tackling each problem from their respective perspective (i.e. legal, economic, environmental).
+Based on the profile of our persona, Robert Rossi, we are targeting experienced leaders aged at least over 45 
+years old with intermidiate tech skills. Therefore, ease of access, clarity and intuitiveness should be our key priorities when working on the design of the
+app. It is also important to consider that, these leaders, due to nature of their job, these leaders are more familiar with laptops than smartphones. Thus, while it is important to make the web app accessible from mobile phones too, laptops should be our primary focus when designing this application. 
+Moreover, as they are part of the Leadership Team, we expect these leaders to be very busy and accustomed to renowned 
+economic journals (i.e. FT, The Economist). Therefore, results should be presented concisely with clear visualizations, preferebly in the form of a business report.
 
-![image](https://user-images.githubusercontent.com/64501760/140772961-4128350f-3fc6-4654-a7ab-8f2f8bbd1b01.png)
+
+[Target Audience Persona - Robert Rossi.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7507856/Target.Audience.Persona.-.Robert.Rossi.pdf)
 
 
 ### Questions to be answered using the dataset
@@ -368,10 +363,11 @@ Briefly describe any issues that are impeding your progress (in the coursework p
 
 
 ## References
-Custom Software Development & Enterprise Mobile Apps. 2021. Top 12 Software Development Methodologies & its Advantages & Disadvantages. [online] Available at: <https://www.tatvasoft.com/blog/top-12-software-development-methodologies-and-its-advantages-disadvantages/> [Accessed 9 November 2021].
-Data Science Process Alliance. n.d. Scrum for Data Science. [online] Available at: <https://www.datascience-pm.com/scrum/https://www.datascience-pm.com/scrum/> [Accessed 8 November 2021].
-Thompson, K., n.d. When to Use Scrum? - Cprime. [online] Cprime. Available at: <https://www.cprime.com/resources/blog/when-to-use-scrum/> [Accessed 9 November 2021].
-Iqbal, M., 2021. Can Scrum Work for Hard Deadlines?. [online] Scrum.org. Available at: <https://www.scrum.org/resources/blog/can-scrum-work-hard-deadlines> [Accessed 9 November 2021].
-Data Science Process Alliance. n.d. CRISP-DM - Data Science Process Alliance. [online] Available at: <https://www.datascience-pm.com/crisp-dm-2/> [Accessed 9 November 2021].
-Qatestlab.com. 2020. 6 Main Principles of Scrum Methodology – QATestLab. [online] Available at: <https://qatestlab.com/resources/knowledge-center/six-scrum-principles/> [Accessed 9 November 2021].
-Schwaber, K. and Sutherland, J., 2020. Scrum Guide | Scrum Guides. [online] Scrumguides.org. Available at: <https://scrumguides.org/scrum-guide.html> [Accessed 9 November 2021].
+1. Custom Software Development & Enterprise Mobile Apps. 2021. Top 12 Software Development Methodologies & its Advantages & Disadvantages. [online] Available at: <https://www.tatvasoft.com/blog/top-12-software-development-methodologies-and-its-advantages-disadvantages/> [Accessed 9 November 2021].  
+2. Data Science Process Alliance. n.d. Scrum for Data Science. [online] Available at: <https://www.datascience-pm.com/scrum/https://www.datascience-pm.com/scrum/> [Accessed 8 November 2021].  
+3. Thompson, K., n.d. When to Use Scrum? - Cprime. [online] Cprime. Available at: <https://www.cprime.com/resources/blog/when-to-use-scrum/> [Accessed 9 November 2021].
+4. Iqbal, M., 2021. Can Scrum Work for Hard Deadlines?. [online] Scrum.org. Available at: <https://www.scrum.org/resources/blog/can-scrum-work-hard-deadlines> [Accessed 9 November 2021].  
+5. Data Science Process Alliance. n.d. CRISP-DM - Data Science Process Alliance. [online] Available at: <https://www.datascience-pm.com/crisp-dm-2/> [Accessed 9 November 2021]. 
+6. Qatestlab.com. 2020. 6 Main Principles of Scrum Methodology – QATestLab. [online] Available at: <https://qatestlab.com/resources/knowledge-center/six-scrum-principles/> [Accessed 9 November 2021].  
+7. Schwaber, K. and Sutherland, J., 2020. Scrum Guide | Scrum Guides. [online] Scrumguides.org. Available at: <https://scrumguides.org/scrum-guide.html> [Accessed 9 November 2021].  
+8. Lucidchart.com. n.d. The Pros and Cons of Waterfall Methodology. [online] Available at: <https://www.lucidchart.com/blog/pros-and-cons-of-waterfall-methodology> [Accessed 9 November 2021].  
