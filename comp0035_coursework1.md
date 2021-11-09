@@ -24,8 +24,7 @@ DataFirst, a software development company, is developing a web app for their cli
 Commission. We are assuming that the European Commission has created a fund for a set of economic investments aimed at reducing the economic
 inequalities across the European countries. For this plan, The EU Leadership Team has decided to target countries 
 with many barriers to doing business and therefore are the least attractive options for new businesses. 
-The European Commission has a vague idea of what 
-the Senior Leaders might find useful to make the investment decision, nevertheless, they are relying on DataFirst to 
+The European Commission's only clear requirement was a data visualisation app, therefore, they are relying on DataFirst to 
 explore the different feasible options and realise what is the best business intelligence solution.
 We are assuming that The DataFirst Team is made up by a small team of students with relevant internship-level experience in the Scrum Methodology. 
 They have been asked to have the final web application ready within a fixed timeframe of 4 months. Nevertheless, they
@@ -33,32 +32,24 @@ have agreed with the European Board to frequently review the work to adapt to th
 
 
 For this particular scenario, it was important to select a software engineering methodology because the main deliverable of the project is a web application. 
-Nevertheless, it was also important to consider a methodology that would integrate flexibly and adequately with data science given that at the heart of the web applications we have insights. 
-Thus, considering specific selection criteria, we will focus on the Scrum Methodology because it allows the team to develop a web application, while remaining flexible and agile to data science (Scrum for Data Science, n.d.).
+Nevertheless, it was also important to consider a methodology that would integrate flexibly and adequately with data science given that at the heart of the web applications we have data insights. 
+Thus, considering specific selection criteria, we will focus on the Scrum Methodology because it allows the team to develop a web application with fleible requirements, while remaining agile to data science (Scrum for Data Science, n.d.).
 
 
 ### Selection criteria and justification of selection
 
-The Scrum Methodology has been selected evaluating the following 5 criteria: Requirements Understanding, Team Location, 
-Ease of access to the client, Working Experience with the team and the Scrum Methodology and the Expected Lifetime of 
-the product. These 5 criteria have been identified as the most important because they take into consideration any 
-the current ability and skills to deploy the web app, original knowledge of dataset, potential risks and blockers
-affecting the quality of the work. 
-
-The first criteria considered was the understanding of the requirements ,referring to both their volatility and
-complexity. Selecting a flexible methodology, in this regard,  was crucial because we expect  the deliverables to 
-vary depending on the business problem and the key findings in the dataset. In other words, remaining flexible 
-throughout the whole product development will allow us to be more relevant to the problem, better adapting to the 
-customer and the requirements. Scrum can really help in this scenario because it expects the team to plan flexibly with 
-sprint plans. This is where all the backlog items will be explained and programmed with an actionable sprint plan. 
-Moreover, the Scrum Methodology, not only has a good integration with data science, it 
-also allows to specifically and sufficiently meet the deliverables of this project. This is because Scrum is centered 
-around working increment of the software. As a result this is the ideal agile data science method for data explorations,
-insights and visualisation because we can answer data science questions without having to invest unnecessary time and 
-resources that more structured data science methodologies (i.e. TDSP) would require in the modelling phase 
-(i.e. Advanced Data Analytics ). With Scrum, this means that while being flexible to uncertain requirements, 
-we can still meet the criteria within the scope of Data Science (with visualisation and exploratory data analysis), 
-reducing costs that would come from more complex and structured data science processes.
+The first criteria considered was the understanding of the requirements, referring to both their volatility and
+complexity. Selecting a flexible methodology in this regard,  was crucial because we expect the deliverables to 
+vary depending on the key findings in the dataset and customer's feedback. With Scrum, we have the opportunity to rectify mistakes quckly 
+both in the Software Engineering and Data Science domains, regardless of the challenges presented by the dataset 
+(Top 12 Software Development Methodologies & its Advantages & Disadvantages, 2021).
+Scrum is helpuful in this in this scenario because, based on the ongoing findings and feedback, the team to plan flexibly with 
+sprint plans (Scrum for Data Science - Data Science Process Alliance, n.d.). This is an opportunity to ensure that we remain flexible 
+and that the final product greatly addresses the expectations.
+Moreover, given its cyclical nature, working on incremental improvements is easy with Scrum and it would allows us to provide more value (Thompson, n.d.).
+Becuase the EU Team does not have a clear idea of the outcome, incremental improvements not only represent a way for the team to reduce the scope of data research, but is also a way to provide significant value. This makes Scrum integrable with data science, especially in this project becuase the end product only requires us to do some data visualuzations. As a result, we can answer data science questions without having to invest unnecessary time and 
+resources that more rigid data science methodologies (i.e. CRISP-DM) would require in the modelling phase 
+(CRISP-DM - Data Science Process Alliance, n.d.). With Scrum, this means that despite the uncertain requirements, we can exceed expectations with lower development costs compared to more complex and structured data science processes.
 
 Secondly, the expected lifetime of the web application was an important criterion in selecting the Agile 
 Methodology for this project. The main assumption is that the web application will be developed for a specific purpose
@@ -91,6 +82,9 @@ Moreover, there is also an opportunity to share feedback internally in the team 
 team can reflect on areas of improvement. Finally, as Scrum is a well-known industry and the most popular agile 
 methodology, support and documentation are widely available. Together with ongoing feedback, they make Scrum ideal for 
 entry-level professionals.
+
+Dealing with data, one of the challenges I am expecting from the Scrum methodology is defining User Stories. This is because,
+Another final aspect to consider is, 
 
 ## Definition of the business need
 ### Problem definition
@@ -375,6 +369,7 @@ Briefly describe any issues that are impeding your progress (in the coursework p
 
 
 ## References
+Custom Software Development & Enterprise Mobile Apps. 2021. Top 12 Software Development Methodologies & its Advantages & Disadvantages. [online] Available at: <https://www.tatvasoft.com/blog/top-12-software-development-methodologies-and-its-advantages-disadvantages/> [Accessed 9 November 2021].
 Data Science Process Alliance. n.d. Scrum for Data Science. [online] Available at: <https://www.datascience-pm.com/scrum/https://www.datascience-pm.com/scrum/> [Accessed 8 November 2021].
-Use any [referencing style](https://library-guides.ucl.ac.uk/referencing-plagiarism/referencing-styles) that you are
-used to using in your course.
+Thompson, K., n.d. When to Use Scrum? - Cprime. [online] Cprime. Available at: <https://www.cprime.com/resources/blog/when-to-use-scrum/> [Accessed 9 November 2021].
+Data Science Process Alliance. n.d. CRISP-DM - Data Science Process Alliance. [online] Available at: <https://www.datascience-pm.com/crisp-dm-2/> [Accessed 9 November 2021].
