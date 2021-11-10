@@ -79,7 +79,6 @@ boxplot = df.boxplot(column=['Getting Credit - Score', 'Resolving insolvency - S
 boxplot.plot()
 plt.show()
 
-# Plot dataset
 df.plot()
 plt.show()
 
