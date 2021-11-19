@@ -6,10 +6,14 @@ coursework if you wish. Alternatively you can use video or audio to provide the 
 ## Requirements definition and analysis
 The term 'requirements' is used in the broader sense, user stories and/or use cases may be used.
 
+Working with our customer the EU Commission and considering the problem statement, the DataFirst has created a context diagram to agree and define the scope of the web app. 
+
 <p align="center">
   <img width="727" alt="Context Diagram" src="https://user-images.githubusercontent.com/64501760/142637851-934652f7-3e5c-40d3-8e16-786d1cc4cfa5.png">
 </p>
 
+From the diagram we can see that the European Leadership Team, our main users, can access the web app to see a dashboard of the World Bank Data.
+This diagram allowed us to identify a few additional features relevant to the the visualization that the EU Leadership Team. The first one is a news feature displaying stories from relevant third-party Newspapers. News and articles from these newspapaers feed into the website, allowing the assees the public sentiment over key deveopment areas. Moreover, another requested functionality is to allow users to tailor visualzations and save preferences. Therefore, beselides looking for insights, the web app can also store search queries so that accessed easily in the future
 
 ### Requirements identification methods
 
