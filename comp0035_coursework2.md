@@ -17,9 +17,27 @@ This diagram allowed us to identify a few additional features relevant to the th
 
 ### Requirements identification methods
 
+To elicit requirements for this project, we decided to use the following methods: Document Analysis and Brainstorming. As the client has not been very specific in the deliverables, we believe that this combination is the best way to elict requirements because we can creatively think of the client's desired features while remaining pragmatic with real and comparable solutions. In fact, firstly, we would use document analysis to enrure that we capture with no ambiguity the main and most essential requirements from existing solutions. This is a great way to address the client's vague description becuase we can refer to existing examples. As a comparable example for document analysis, we would mainly levarage the World Bank Platform, to understand what requirements and details are relevant to the web application we are building. Reviewing and confirming these requirements with the client will be essential becuase we are able to capture requirements based on a real example. 
+The second step is to build upon these essential requirements (elicited from the document analysis) using brainstorming. With the brainstorming method, we can eliciti new desired requirements creatively, helping the team provide can help us provide more value. The aim is to promote as many ideas as possible and selecting the most important through. One of the challenges of using brainstorming is that the quality of the sessions can be limited by the Organization Politics or the intersonal traits (reference, the EU Team in this case). Nevertheless, as a result of this combined choice, we have able to have a more balanced approach to eliciting requirements. 
+In fact we can ensure that we creatively think of all the potential uselful requirements, yet remaining pragmatic with an agreed set of key existing requirements from comparable documents. 
+
+https://babokpage.wordpress.com/techniques/document-analysis/
+https://babokpage.wordpress.com/techniques/brainstorming/
+
 ### Requirement specification method
 
+Considering the choice of our methodology, Scrum, the best specification method are User Stories, however, we will also be using Use Cases for the most crucial requirements. We choose to use User Stories because we want to understand and priorize well the needs of the European Leadership Team. With a simple format, user stories help us to understand requirements from a user perspective decribing crearly what the user would like to achieve. This would allow us to understand why users might want a particular requirement and priotise accordingly. With USer Stories, we can also reiterate frequently with the customers, describing our understanding of the requirements in a non'technical way. In other words, this method can help us assess and adapt easily to the changing requirements. 
+One of the challenges as a result of this choice is that with user story we might  not capture the whole value of data and the insights. Neverthelss, given the changing requirements, meeting the expectations is our key prioroty and we can leverage the acceptence criteria as a way to be more specific about each functional requirement. Moreover, the most critical and data'oriented aspects of the requirements will be analysed with use cases to ensure that crucial data insights are not lost.
+
+https://www.digite.com/agile/user-stories/
+
 ### Prioritisation method
+
+To prioritise our requirements, we chose forced ranking prioritisation. This method involves looking at any two requirements at the time and choose which one is more important collectively. The main resons why this is the best method for our project is becuase with forced ranking prioritiation, we can prioritise based on a give user role or persona. Not only this alighs very well with user stories, but it also allows us to choose requirements empathazing with what users from the leadrship TEam want or need.
+
+One advantage of this is that we can focus on two at the time, making it easier to rank what are the most importnant ranks. Similarly, this means that ranking the least importart will be more difficult  and therefore one potential challenge of this method is agreeing on the least importnat requirements. Nevertheless, as we assume that requirements change, the precise rank of the least important requirements is not very important as we aim to iterate this prioritisation often. Another way of dealing with this challenge would be to divide groups in smaller ones when making a ranking decision.
+
+https://www.linkedin.com/learning/agile-product-owner-role-techniques/forced-ranking-prioritization?autoAdvance=true&autoSkip=false&autoplay=true&resume=false&u=69919578
 
 ### Documented and prioritised requirements
 Link to the full list of documented and prioritised requirements.
