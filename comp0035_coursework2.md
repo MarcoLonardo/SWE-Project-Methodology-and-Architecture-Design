@@ -9,7 +9,7 @@ The term 'requirements' is used in the broader sense, user stories and/or use ca
 Working with our customer the EU Commission and considering the problem statement, the DataFirst has created a context diagram to agree and define the scope of the web app. 
 
 <p align="center">
-  <img width="727" alt="Context Diagram" src="https://user-images.githubusercontent.com/64501760/142637851-934652f7-3e5c-40d3-8e16-786d1cc4cfa5.png">
+  <img width="727" alt="Context Diagram" src="https://user-images.githubusercontent.com/64501760/144744384-4d6b78f7-3fef-49ec-8fae-b335e29c70bf.png">
 </p>
 
 From the diagram we can see that the European Leadership Team, our main users, can access the web app to see a dashboard of the World Bank Data.
@@ -42,9 +42,42 @@ https://www.linkedin.com/learning/agile-product-owner-role-techniques/forced-ran
 ### Documented and prioritised requirements
 Link to the full list of documented and prioritised requirements.
 
+[Requirements - Prioritised User Stories.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7655710/Requirements.-.Prioritised.User.Stories.pdf)
+
+<p align="center">
+  <img width="727" alt="Use Case Diagram" src="https://user-images.githubusercontent.com/64501760/144744356-d3f7010a-4a3b-4f80-98c4-13b6cac28925.png">
+</p>
+
 
 ## Design
 ### Structure and flow of the interface
+
+With the requirements identified in the previous section and and the ensuing use case diagram we were able to identify the main goals of the users. Thus we categorized all the goals and sub-goals in the following way:
+
+1. Visualize Data
+  - Filter for parameters (Years, Country)
+  - Modify Chart (Bar Chart, Line Chart)
+  - Save Prefrences
+  - Export Reports Offline
+2. Read News
+  - Click on the article
+  - Save the article
+3. Save Filters/Preferences
+  - Access Previous Queries 
+  - Export charts and reports
+
+
+
+At this point, before wireframing the main goals, it was necessary to understand the relationships among these goals. In other words, once we understood what the users would like to achieve using our web app, we needed to understand how the user would navigate from one goal to another. Using the goals above, we sketched the main user flows using the following flow chart. From the chart, we can observe that once the users signs in, There are three key goals he/she can achieve (in orange): Visualize Data, Read News and Access Saved Reports. Each of these goals would then allow the user to more advanced actions (in grey) defined as the sub-goals. 
+
+
+
+<p align="center">
+  <img width="727" alt="Use Case Diagram" src="https://user-images.githubusercontent.com/64501760/144746462-119dead9-1d7d-4319-b8b3-4ae1ec414826.png">
+</p>
+
+
+Finally, we were able to wireframe focusing specifically on the main goals (Visualize Data, Read News and Access Saved Reports) and describing their relationships. 
 
 ### Relational database design
 
