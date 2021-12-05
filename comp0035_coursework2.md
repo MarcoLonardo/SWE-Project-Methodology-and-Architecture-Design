@@ -52,7 +52,7 @@ Link to the full list of documented and prioritised requirements.
 ## Design
 ### Structure and flow of the interface
 
-With the requirements identified in the previous section and and the ensuing use case diagram we were able to identify the main goals of the users. Thus we categorized all the goals and sub-goals in the following way:
+With the requirements identified in the previous section and and the ensuing use case diagram we were able to identify the main goals of the users. Thus, we categorized all the goals and sub-goals in the following way:
 
 1. Visualize Data
   - Filter for parameters (Years, Country)
@@ -73,15 +73,32 @@ At this point, before wireframing the main goals, it was necessary to understand
 
 
 <p align="center">
-  <img width="727" alt="Use Case Diagram" src="https://user-images.githubusercontent.com/64501760/144746462-119dead9-1d7d-4319-b8b3-4ae1ec414826.png">
+  <img width="727" alt="User Flows" src="https://user-images.githubusercontent.com/64501760/144746462-119dead9-1d7d-4319-b8b3-4ae1ec414826.png">
 </p>
 
 
-Finally, we were able to wireframe focusing specifically on the main goals (Visualize Data, Read News and Access Saved Reports) and describing their relationships. 
+Finally, we were able to wireframe focusing specifically on the main goals (Visualize Data, Read News and Access Saved Reports) and describing their relationships. When wireframing, we considered designing for desktop use. This is becuase, as identified in the target audience, the EU Leadrship team has more familiary with PCs and laptops and these dashboard will have to be accessed at work.  
+
 
 ### Relational database design
 
 ### Application structure
+
+From the User Stories, we obtain the following list of classes. Attributes and methods for each of the classes is defined in the with UML class diagrams below.
+
+1. Metric
+2. Filter
+3. Chart
+4. Account
+5. Exports
+
+
+
+<p align="center">
+  <img width="727" alt="UML Class Diagram" src="https://user-images.githubusercontent.com/64501760/144760697-3a12f537-34c4-417c-b689-070dbe7e4d00.png">
+</p>
+
+
 
 
 ## Testing
