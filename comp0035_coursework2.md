@@ -9,11 +9,12 @@ The term 'requirements' is used in the broader sense, user stories and/or use ca
 Working with our customer the EU Commission and considering the problem statement, the DataFirst has created a context diagram to agree and define the scope of the web app. 
 
 <p align="center">
-  <img width="727" alt="Context Diagram" src="https://user-images.githubusercontent.com/64501760/144744384-4d6b78f7-3fef-49ec-8fae-b335e29c70bf.png">
+  <img width="727" alt="Context Diagram" src="https://user-images.githubusercontent.com/64501760/145560609-43bf0b4c-20a9-49ec-aad6-23656ed6632d.png">
 </p>
 
-From the diagram we can see that the European Leadership Team, our main users, can access the web app to see a dashboard of the World Bank Data.
-This diagram allowed us to identify a few additional features relevant to the the visualization that the EU Leadership Team. The first one is a news feature displaying stories from relevant third-party Newspapers. News and articles from these newspapaers feed into the website, allowing the assees the public sentiment over key deveopment areas. Moreover, another requested functionality is to allow users to tailor visualzations and save preferences. Therefore, beselides looking for insights, the web app can also store search queries so that accessed easily in the future
+
+From the context diagram,  we can see that the primary function of the web app is to provide inisghts to  the European Leadership Team with a visualization dashboard.
+Nevertheless, twith the diagram, we could identify a few additional features relevant to EU Leadership Team's needs. The first one is a news feature displaying stories from relevant third-party Newspapers. News and articles from these newspapaers feed into the website, allowing the EU Team to assess the public sentiment over key deveopment areas. Moreover, another requested functionality is to allow users to tailor visualzations and save preferences. This means that it will be essential to allow users to access their accounts to access history of previous queries and articles.
 
 ### Requirements identification methods
 
@@ -73,9 +74,8 @@ At this point, before wireframing the main goals, it was necessary to understand
 
 
 <p align="center">
-  <img width="727" alt="User Flows" src="https://user-images.githubusercontent.com/64501760/144746462-119dead9-1d7d-4319-b8b3-4ae1ec414826.png">
+  <img width="727" alt="User Flows" src="https://user-images.githubusercontent.com/64501760/145561123-327b61eb-f52b-4c3f-9c31-238a4a64dc72.png">
 </p>
-
 
 Finally, we were able to wireframe focusing specifically on the main goals (Visualize Data, Read News and Access Saved Reports) and describing their relationships. When wireframing, we considered designing for desktop use. This is becuase, as identified in the target audience, the EU Leadrship team has more familiary with PCs and laptops and these dashboard will have to be accessed at work.  
 
@@ -93,12 +93,15 @@ From the User Stories, we obtain the following list of classes. Attributes and m
 5. Exports
 
 
-
 <p align="center">
   <img width="727" alt="UML Class Diagram" src="https://user-images.githubusercontent.com/64501760/144760697-3a12f537-34c4-417c-b689-070dbe7e4d00.png">
 </p>
 
+Using the wireframes and the main flows, we could then identify the routes and the relating controller functions described in the following table.
 
+<p align="center">
+  <img width="727" alt="Route and Controllers" src="https://user-images.githubusercontent.com/64501760/145560924-4d74fd07-96a1-4cc9-83db-98ff39737f0d.png">
+</p>
 
 
 ## Testing
