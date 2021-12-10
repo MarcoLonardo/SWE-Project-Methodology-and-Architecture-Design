@@ -82,6 +82,13 @@ Finally, we were able to wireframe focusing specifically on the main goals (Visu
 
 ### Relational database design
 
+
+<p align="center">
+  <img width="727" alt="User Flows" src="https://user-images.githubusercontent.com/64501760/145611048-93b6a9b4-0f8a-4f18-ab5d-7f1db5cafb37.png">
+</p>
+
+
+
 ### Application structure
 
 From the User Stories, we obtain the following list of classes. Attributes and methods for each of the classes is defined in the with UML class diagrams below.
