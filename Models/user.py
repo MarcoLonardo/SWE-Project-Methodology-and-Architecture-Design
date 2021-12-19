@@ -1,6 +1,7 @@
 # Write unit tests that test aspects of this class. You may modify the code or extend it by adding additional
 # attributes and methods. The code has not been tested and may contain bugs.
 from datetime import date
+from datetime import datetime
 
 import bcrypt
 
@@ -29,7 +30,7 @@ class GeneralUser(object):
         is_correct_password: Checks if the string password matches the hashed password
     """
 
-    def __init__(self, first_name: str, last_name: str, email: str, password: str, dob: date = None):
+    def __init__(self, first_name: str, last_name: str, email: str, password: str, dob: date = "30/04/98"):
         self.first_name = first_name
         self.last_name = last_name
         self.email = email
@@ -54,6 +55,7 @@ class GeneralUser(object):
         Returns:
             age (str): The age based on the dob and today's date, or a message if the date of birth has not been set
         """
+        self.dob = datetime.strptime(self.dob, '%d/%m/%y')
         if self.dob is None:
             return "Age not calculated, date of birth unknown"
         else:
