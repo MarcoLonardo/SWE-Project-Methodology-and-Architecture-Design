@@ -115,40 +115,62 @@ Using the wireframes and the main flows, we could then identify the routes and t
 ### Choice of unit testing library
 
 ### Tests
-The tests should be in a separate and appropriately named file/directory.
+The tests have been performed in the tests directory: .
+
+After installing the pytest library, two tests have been peformed for this project. From the sample user class code provided, we decided to focus on testing the following two methods for this project: create_full_name and calculate_age. We are assuming that perfoming unit trsting on this code will help us test part of the User Class identified in the design section. Both of the tests have been determined and described below using the GIVEN-WHEN-THEN Approach. With this approach, we realized that the set-up condition is the same for both tests. Indeed, both methods (create_full_name and calculate_age) required us to create a new user for unit testing. Therefore, we used fixtures to provide a common function (general_user) for both tests, allowing us to reduce common code. As we have to do one test for each of the text functions, we will be using the "function" scope. Finally, eahc of the functions have been tested twice: both with  the correct data and the incorrect data.
+
+The first test function test_create_full_name aims to test whether the correct full name is returned for a new user. 
+It can be, therefore, be described with the following GIVEN-WHEN-THEN Approach: 
+   
+   
+    """
+    GIVEN a new user (created as fixture) named James White
+    WHEN his first_name and last_name are passed to the "create_full_name" function
+    THEN the full_name should be James White
+
+    """
+  
+The second function test_calculate_age aims to test whether the correct age is returned given the date of birth of a new user. It was necessary to convert the date of birth from string to date, in order to correctly test this function. It can be descibed with the following GIVEN-WHEN-THEN Approach: 
+    
+    """
+    GIVEN a new user (created as fixture) born in 1998
+    WHEN his date of birth (dob) is passed to the "calculate_age function"
+    THEN the age should be equal to 23
+
+    """
+    
+   
 
 ### Test results
-Provide evidence that the tests have been run and the results of the tests (e.g. screenshot).
+
+Testing Results with Correct Data
+
+<p align="center">
+  <img width="1031" alt="image" src="https://user-images.githubusercontent.com/64501760/146686691-7f83aa62-25e4-4f05-9095-fd3890440c37.png">
+</p>
+
+Testing Results with Incorrect Data (for both functions)
+
+<p align="center">
+  <img width="1033" alt="image" src="https://user-images.githubusercontent.com/64501760/146686832-13f41cea-2067-4379-9460-78eec074a212.png">
+</p>
+
+
+Coverage Reports
+
+<p align="center">
+  <img width="1033" alt="image" src="https://user-images.githubusercontent.com/64501760/146687096-ec11636e-ba40-4962-8b8d-a9a022b7c11e.png">
+</p>
+
+
+<p align="center">
+  <img width="1037" alt="image" src="https://user-images.githubusercontent.com/64501760/146687154-7bd1e7c9-fa22-4322-aaa0-324f947c68f6.png">
+</p>
+
 
 ### Continuous integration (optional)
 Consider using GitHub Actions (or other) to establish a continuous integration pipeline. If you do so then please provide a link to the .yml and a screenshot of the results of a workflow run.
 
-## Weekly progress reports
-
-Copy and paste from Moodle or use the following structure. Delete this instruction text.
-
-What I did in the last week:
-
-- item
-- item
-
-What I plan to do in the next week:
-
-- item
-- item
-
-Issues blocking my progress (state ‘None’ if there are no issues):
-
-- item
-- item
-
-### Report 1
-
-### Report 2
-
-### Report 3
-
-### Report 4
 
 ## References
 
