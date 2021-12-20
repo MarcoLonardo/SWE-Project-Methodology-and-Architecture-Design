@@ -46,7 +46,8 @@ Link to the full list of documented and prioritised requirements.
 [Requirements - Prioritised User Stories.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7655710/Requirements.-.Prioritised.User.Stories.pdf)
 
 <p align="center">
-  <img width="727" alt="Use Case Diagram" src="https://user-images.githubusercontent.com/64501760/144744356-d3f7010a-4a3b-4f80-98c4-13b6cac28925.png">
+  <img width="762" alt="Use Case Diagram" src="https://user-images.githubusercontent.com/64501760/146814104-70deed63-b3d5-4eee-9bef-501faf7706c7.png">
+
 </p>
 
 
@@ -73,29 +74,37 @@ With the requirements and the ensuing use case diagram identified in the previou
 
 
 
-At this point, before wireframing the main goals, it was necessary to understand the relationships among these goals. In other words, once we understood what the users would like to achieve using our web app, we needed to understand how the user would navigate from one goal to another. Using the goals above, we sketched the main user flows using the following flow chart. From the chart, we can observe that once the users signs in, there are three key goals he/she can achieve (in orange): Visualize Data, Read News and Access Saved Reports. Each of these goals would then allow the user to more advanced actions (in grey) defined as the sub-goals. 
+At this point, before wireframing the main goals, it was necessary to understand the relationships among these goals. In other words, once we understood what the users would like to achieve using our web app, we needed to understand how the user would navigate from one goal to another. Using the goals above, we sketched the main user flows using the following flow chart. From the chart, we can observe that once the users signs in, there are three key goals he/she can achieve (in orange): Access Account, Visualize Data, Read News and Access History. Each of these goals would then allow the user to more advanced actions (in grey) defined as the sub-goals. 
 
 <p align="center">
   <img width="826" alt="User Flow" src="https://user-images.githubusercontent.com/64501760/146791731-89789f3e-1d48-4dee-86f0-03bbab9c7609.png">
 </p>
 
 
-Finally, we were able to wireframe focusing specifically on the main goals (Visualize Data, Read News and Access Saved Reports) and describing their relationships. When wireframing, we considered designing for desktop use. This is becuase, as identified in the target audience, the EU Leadership team has more familiary with PCs and laptops and these dashboard will have to be accessed at work. Each of the wireframes has a wireframe reference number allowing us to associate the wireframe with specific routes and controllers of our Model-View-Controller (MVC) application. The following Wireframes will, in fact, represent the views of our MVC Application described in the next section.
+Finally, we were able to wireframe focusing specifically on the main goals (Access Account, Visualize Data, Read News and Access History) and describing their relationships. When wireframing, we considered designing for desktop use. This is becuase, as identified in the target audience, the EU Leadership team has more familiary with PCs and laptops and these dashboard will have to be accessed at work. Each of the wireframes has a wireframe reference number allowing us to associate the wireframe with specific routes and controllers of our Model-View-Controller (MVC) application. The following Wireframes will, in fact, represent the views of our MVC Application described in the next section.
 
 ### Application structure
 
-From the User Stories, we obtain the following list of classes. Attributes and methods for each of the classes is defined in the with UML class diagrams below.
+For our Flask web application, we are going to use the Model-View_Controller pattern. This model seprates the input, the processing and the output of the apps in three components: Models, Views and Controllers. This separation can be very helpful for our project becuase if requirements changes do not affect the whole architecture of the model https://www.brainvire.com/six-benefits-of-using-mvc-model-for-effective-web-application-development/.
 
-1. Metric
-2. Filter
-3. Chart
-4. Account
+The first step is to design the models using the Data Driven Design (DDD) approach, where nouns, adjectives and verbs suggest classes, attrtibutes and method, respectively. 
+Thus, using User Stories, we selected the following 8 models for our app. Attributes and methods for each of the classes is defined in the with UML class diagrams below.
+
+1. Account
+2. Metric
+3. Country
+4. Year
 5. Exports
+6. Articles
+7. Preferences
+8. History
 
 
 <p align="center">
-  <img width="727" alt="UML Class Diagram" src="https://user-images.githubusercontent.com/64501760/144760697-3a12f537-34c4-417c-b689-070dbe7e4d00.png">
+  <img width="698" alt="Class Diagram UML" src="https://user-images.githubusercontent.com/64501760/146812327-a3033557-4fc2-46dd-b9ec-f4eb7e2884c3.png">
 </p>
+
+
 
 Using the wireframes and the main flows, we could then identify the routes and the relating controller functions described in the following table.
 
@@ -108,8 +117,9 @@ Using the wireframes and the main flows, we could then identify the routes and t
 
 
 <p align="center">
-  <img width="1025" alt="Relational Database Design" src="https://user-images.githubusercontent.com/64501760/146781301-cc17c882-4438-432b-8dd2-e17f34a63073.png">
+  <img width="1014" alt="Relational Database Design" src="https://user-images.githubusercontent.com/64501760/146812275-d427ffdd-0600-4e33-8157-7fdea351a179.png">
 </p>
+
 
 
 ## Testing
