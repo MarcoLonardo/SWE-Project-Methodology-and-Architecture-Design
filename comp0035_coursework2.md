@@ -182,6 +182,16 @@ Coverage Reports
 ### Continuous integration (optional)
 Consider using GitHub Actions (or other) to establish a continuous integration pipeline. If you do so then please provide a link to the .yml and a screenshot of the results of a workflow run.
 
+.yml Link:https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/blob/cfb6b5ebf1ca85627a4cea0ba0966ad79315eb65/.github/workflows/python-app.yml 
+
+<p align="center">
+  <img width="785" alt="GitHub Continuous Integration" src="https://user-images.githubusercontent.com/64501760/146846255-203976f4-77c9-44e7-8da7-06ac939a587a.png">
+>
+</p>
+
+
+
+
 
 ## References
 
