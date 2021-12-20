@@ -1,8 +1,3 @@
-from datetime import datetime
-
-from Models.user import GeneralUser
-
-
 def test_create_full_name(general_user):
     """
    GIVEN a new user (created as a fixture) named James White
