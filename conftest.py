@@ -1,5 +1,5 @@
 import pytest
-from User.user import GeneralUser
+from user import GeneralUser
 
 
 @pytest.fixture(scope='function')
