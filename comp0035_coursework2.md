@@ -43,7 +43,8 @@ https://www.linkedin.com/learning/agile-product-owner-role-techniques/forced-ran
 ### Documented and prioritised requirements
 Link to the full list of documented and prioritised requirements.
 
-[Requirements - Prioritised User Stories.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7655710/Requirements.-.Prioritised.User.Stories.pdf)
+[Requirements - Prioritised User Stories.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7748576/Requirements.-.Prioritised.User.Stories.pdf)
+
 
 <p align="center">
   <img width="762" alt="Use Case Diagram" src="https://user-images.githubusercontent.com/64501760/146814104-70deed63-b3d5-4eee-9bef-501faf7706c7.png">
@@ -184,20 +185,36 @@ Consider using GitHub Actions (or other) to establish a continuous integration p
 
 .yml Link:https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/blob/cfb6b5ebf1ca85627a4cea0ba0966ad79315eb65/.github/workflows/python-app.yml 
 
+Results with correct data for both methods
 <p align="center">
-  <img width="785" alt="GitHub Continuous Integration" src="https://user-images.githubusercontent.com/64501760/146846255-203976f4-77c9-44e7-8da7-06ac939a587a.png">
+  <img width="778" alt="image" src="https://user-images.githubusercontent.com/64501760/146846644-9b4e9f7e-866b-4bc4-b845-43bb001f859d.png">
+>
+</p>
+
+Results with incorrect data only for the calculate_full_name method
+
+<p align="center">
+  <img width="785" alt="GitHub CI Failure" src="https://user-images.githubusercontent.com/64501760/146847022-fc0470c2-0dc2-4cc8-8bce-863db965b5bf.png">
 >
 </p>
 
 
-
-
-
 ## References
 
-Delete this instruction text before submitting:
+BABOK Page. n.d. Document Analysis. [online] Available at: <https://babokpage.wordpress.com/techniques/document-analysis/> [Accessed 20 December 2021].
 
-- Include references to any templates you have used.
-- If you justify any of your choices with references then remember to also include these.
-- Use any [referencing style](https://library-guides.ucl.ac.uk/referencing-plagiarism/referencing-styles) that you are
-  used to using in your course.
+BABOK Page. n.d. Brainstorming. [online] Available at: <https://babokpage.wordpress.com/techniques/brainstorming/> [Accessed 20 December 2021].
+
+
+Digite. n.d. User Stories: What They Are And Why And How To Use Them. [online] Available at: <https://www.digite.com/agile/user-stories/> [Accessed 20 December 2021].
+
+
+Wick, A., 2017. Forced ranking prioritization - Agile Product Owner Role: Techniques Video Tutorial | LinkedIn Learning, formerly Lynda.com. [online] LinkedIn. Available at: <https://www.linkedin.com/learning/agile-product-owner-role-techniques/forced-ranking-prioritization?autoAdvance=true&autoSkip=false&autoplay=true&resume=false&u=69919578> [Accessed 20 December 2021].
+
+
+
+Adojutelegan, J., 2021. Why you should add Wireframing to your design process | Marvel Blog. [online] Marvel Blog. Available at: <https://marvelapp.com/blog/why-you-should-add-wireframing-to-your-design-process/> [Accessed 20 December 2021].
+
+
+
+
