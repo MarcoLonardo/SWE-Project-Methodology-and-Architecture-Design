@@ -77,7 +77,7 @@ With the requirements and the ensuing use case diagram identified in the previou
 At this point, before wireframing the main goals, it was necessary to understand the relationships among these goals. In other words, once we understood what the users would like to achieve using our web app, we needed to understand how the user would navigate from one goal to another. Using the goals above, we sketched the main user flows using the following flow chart. From the chart, we can observe that once the users signs in, there are three key goals he/she can achieve (in orange): Access Account, Visualize Data, Read News and Access History. Each of these goals would then allow the user to more advanced actions (in grey) defined as the sub-goals. 
 
 <p align="center">
-  <img width="826" alt="User Flow" src="https://user-images.githubusercontent.com/64501760/146791731-89789f3e-1d48-4dee-86f0-03bbab9c7609.png">
+  <img width="808" alt="User Flow" src="https://user-images.githubusercontent.com/64501760/146827346-ba90daa1-84a2-4aaa-80dc-e540d52094ad.png">
 </p>
 
 
@@ -105,12 +105,12 @@ Thus, using User Stories, we selected the following 8 models for our app. Attrib
 </p>
 
 
-
-Using the wireframes and the main flows, we could then identify the routes and the relating controller functions described in the following table.
+At this point given the many number of features and flows among them, we used the views (wireframes) to identify the URL and the associated controller function. From the table below, we can see that, excluding the landing page (index), there are 8 routes, each of the routes correspond to a particular view (and therefore, user goal) we have identified in the wireframe section. The 9 routes and the relating controller functions are described in the following table.
 
 <p align="center">
-  <img width="727" alt="Route and Controllers" src="https://user-images.githubusercontent.com/64501760/145560924-4d74fd07-96a1-4cc9-83db-98ff39737f0d.png">
+  <img width="759" alt="Route and Controllers" src="https://user-images.githubusercontent.com/64501760/146827296-ed4eaf5a-7306-4f58-932a-5d010d3099b4.png">
 </p>
+
 
 
 ### Relational database design
