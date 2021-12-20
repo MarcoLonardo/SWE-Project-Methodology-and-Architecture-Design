@@ -56,24 +56,29 @@ Link to the full list of documented and prioritised requirements.
 To Model the User Interface, we decided to use Wireframing becuase they provide a prototype of the end product with the minimimal effort. In fact, without spending too many resources on the visual aspect, with Lo-Fi wireframes we can interate quickly to obtain feedback and refine existing requirements (https://marvelapp.com/blog/why-you-should-add-wireframing-to-your-design-process/). Thus, it is a great way to complement our Scrum Methology and address the customers' changing requirements. 
 With the requirements and the ensuing use case diagram identified in the previous section, we decided to wireframe starting with the main goals of the users. Thus, we categorized all the goals and sub-goals in the following way:
 
-1. Visualize Data
+1. Access Account
+  - Log in
+  - Create Account
+2. Visualize Data
   - Filter for parameters (Years, Country)
   - Modify Chart (Bar Chart, Line Chart)
   - Save Prefrences
   - Export Reports Offline
-2. Read News
+3 . Read News
   - Click on the article
   - Save the article
-3. Save Filters/Preferences
-  - Access Previous Queries 
-  - Export charts and reports
+4. Access History
+  - Previous Preferences
+  - My Saved Articles
+
 
 
 At this point, before wireframing the main goals, it was necessary to understand the relationships among these goals. In other words, once we understood what the users would like to achieve using our web app, we needed to understand how the user would navigate from one goal to another. Using the goals above, we sketched the main user flows using the following flow chart. From the chart, we can observe that once the users signs in, there are three key goals he/she can achieve (in orange): Visualize Data, Read News and Access Saved Reports. Each of these goals would then allow the user to more advanced actions (in grey) defined as the sub-goals. 
 
 <p align="center">
-  <img width="733" alt="User Flow" src="https://user-images.githubusercontent.com/64501760/146782429-e80783ac-eccc-4a9c-95b3-6f1d759d8f2c.png">
+  <img width="826" alt="User Flow" src="https://user-images.githubusercontent.com/64501760/146791731-89789f3e-1d48-4dee-86f0-03bbab9c7609.png">
 </p>
+
 
 Finally, we were able to wireframe focusing specifically on the main goals (Visualize Data, Read News and Access Saved Reports) and describing their relationships. When wireframing, we considered designing for desktop use. This is becuase, as identified in the target audience, the EU Leadership team has more familiary with PCs and laptops and these dashboard will have to be accessed at work. Each of the wireframes has a wireframe reference number allowing us to associate the wireframe with specific routes and controllers of our Model-View-Controller (MVC) application. The following Wireframes will, in fact, represent the views of our MVC Application described in the next section.
 
