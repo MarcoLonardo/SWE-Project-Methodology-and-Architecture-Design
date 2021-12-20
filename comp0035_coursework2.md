@@ -53,7 +53,8 @@ Link to the full list of documented and prioritised requirements.
 ## Design
 ### Structure and flow of the interface
 
-With the requirements identified in the previous section and and the ensuing use case diagram we were able to identify the main goals of the users. Thus, we categorized all the goals and sub-goals in the following way:
+To Model the User Interface, we decided to use Wireframing becuase they provide a prototype of the end product with the minimimal effort. In fact, without spending too many resources on the visual aspect, with Lo-Fi wireframes we can interate quickly to obtain feedback and refine existing requirements (https://marvelapp.com/blog/why-you-should-add-wireframing-to-your-design-process/). Thus, it is a great way to complement our Scrum Methology and address the customers' changing requirements. 
+With the requirements and the ensuing use case diagram identified in the previous section, we decided to wireframe starting with the main goals of the users. Thus, we categorized all the goals and sub-goals in the following way:
 
 1. Visualize Data
   - Filter for parameters (Years, Country)
@@ -68,26 +69,13 @@ With the requirements identified in the previous section and and the ensuing use
   - Export charts and reports
 
 
-
-At this point, before wireframing the main goals, it was necessary to understand the relationships among these goals. In other words, once we understood what the users would like to achieve using our web app, we needed to understand how the user would navigate from one goal to another. Using the goals above, we sketched the main user flows using the following flow chart. From the chart, we can observe that once the users signs in, There are three key goals he/she can achieve (in orange): Visualize Data, Read News and Access Saved Reports. Each of these goals would then allow the user to more advanced actions (in grey) defined as the sub-goals. 
-
-
+At this point, before wireframing the main goals, it was necessary to understand the relationships among these goals. In other words, once we understood what the users would like to achieve using our web app, we needed to understand how the user would navigate from one goal to another. Using the goals above, we sketched the main user flows using the following flow chart. From the chart, we can observe that once the users signs in, there are three key goals he/she can achieve (in orange): Visualize Data, Read News and Access Saved Reports. Each of these goals would then allow the user to more advanced actions (in grey) defined as the sub-goals. 
 
 <p align="center">
-  <img width="727" alt="User Flows" src="https://user-images.githubusercontent.com/64501760/145561123-327b61eb-f52b-4c3f-9c31-238a4a64dc72.png">
+  <img width="733" alt="User Flow" src="https://user-images.githubusercontent.com/64501760/146782429-e80783ac-eccc-4a9c-95b3-6f1d759d8f2c.png">
 </p>
 
-Finally, we were able to wireframe focusing specifically on the main goals (Visualize Data, Read News and Access Saved Reports) and describing their relationships. When wireframing, we considered designing for desktop use. This is becuase, as identified in the target audience, the EU Leadrship team has more familiary with PCs and laptops and these dashboard will have to be accessed at work.  
-
-
-### Relational database design
-
-
-<p align="center">
-  <img width="727" alt="User Flows" src="https://user-images.githubusercontent.com/64501760/145611048-93b6a9b4-0f8a-4f18-ab5d-7f1db5cafb37.png">
-</p>
-
-
+Finally, we were able to wireframe focusing specifically on the main goals (Visualize Data, Read News and Access Saved Reports) and describing their relationships. When wireframing, we considered designing for desktop use. This is becuase, as identified in the target audience, the EU Leadership team has more familiary with PCs and laptops and these dashboard will have to be accessed at work. Each of the wireframes has a wireframe reference number allowing us to associate the wireframe with specific routes and controllers of our Model-View-Controller (MVC) application. The following Wireframes will, in fact, represent the views of our MVC Application described in the next section.
 
 ### Application structure
 
@@ -108,6 +96,14 @@ Using the wireframes and the main flows, we could then identify the routes and t
 
 <p align="center">
   <img width="727" alt="Route and Controllers" src="https://user-images.githubusercontent.com/64501760/145560924-4d74fd07-96a1-4cc9-83db-98ff39737f0d.png">
+</p>
+
+
+### Relational database design
+
+
+<p align="center">
+  <img width="1025" alt="Relational Database Design" src="https://user-images.githubusercontent.com/64501760/146781301-cc17c882-4438-432b-8dd2-e17f34a63073.png">
 </p>
 
 
