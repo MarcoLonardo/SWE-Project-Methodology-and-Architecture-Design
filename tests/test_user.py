@@ -5,7 +5,7 @@ def test_create_full_name(general_user):
    THEN the full_name should be James White
    """
     full_name = general_user.create_full_name()
-    assert full_name == "James White"
+    assert full_name == "James Wite"
 
 
 def test_calculate_age(general_user):
