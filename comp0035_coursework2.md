@@ -82,7 +82,11 @@ At this point, before wireframing the main goals, it was necessary to understand
 
 
 #### Wireframes
-Finally, we were able to wireframe focusing specifically on the main goals (Access Account, Visualize Data, Read News and Access History) and describing their relationships. When wireframing, we considered designing for desktop use. This is becuase, as identified in the target audience, the EU Leadership team has more familiary with PCs and laptops and these dashboard will have to be accessed at work. Each of the wireframes has a wireframe reference number allowing us to associate the wireframe with specific routes and controllers of our Model-View-Controller (MVC) application. The following Wireframes will, in fact, represent the views of our MVC Application described in the next section.
+Finally, we were able to wireframe focusing specifically on the main goals (Access Account, Visualize Data, Read News and Access History) and describing their relationships. When wireframing, we considered designing for desktop use. This is becuase, as identified in the target audience, the EU Leadership team has more familiary with PCs and laptops and these dashboard will have to be accessed at work. Each of the wireframes has a wireframe reference number allowing us to associate the wireframe with specific routes and controllers of our Model-View-Controller (MVC) application. The following Wireframes will, in fact, represent the views of our MVC Application described in the next section. Moreover the Wireframes Flows.pdf will describe how the different flows among the views.
+
+[Wireframes.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7757098/Wireframes.pdf)
+[Wireframes Flows.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7757099/Wireframes.Flows.pdf)
+
 
 ### Application structure
 
@@ -110,7 +114,8 @@ Thus, using User Stories, we selected the following 8 models for our app. Attrib
 At this point given the many number of features and flows among them, we used the views (wireframes) to identify the URL and the associated controller function. From the table below, we can see that, excluding the landing page (index), there are 8 routes, each of the routes correspond to a particular view (and therefore, user goal) we have identified in the wireframe section. The 9 routes and the relating controller functions are described in the following table.
 
 <p align="center">
-  <img width="745" alt="Route and Controllers" src="https://user-images.githubusercontent.com/64501760/146958852-a867e5c5-a2ac-4c50-9b11-87947ede21f6.png">
+  <img width="754" alt="Route and Controllers" src="https://user-images.githubusercontent.com/64501760/146974502-98ab6c9e-96d3-4195-9a19-fcedb22aa7ba.png">
+
 
 </p>
 
