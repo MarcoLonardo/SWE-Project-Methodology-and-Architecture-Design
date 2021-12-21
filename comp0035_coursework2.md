@@ -40,13 +40,18 @@ Link to the full list of documented and prioritised requirements.
 
 
 #### User Stories
-[Requirements - Prioritised User Stories.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7748576/Requirements.-.Prioritised.User.Stories.pdf)
+[Requirements - Prioritised User Stories.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7758189/Requirements.-.Prioritised.User.Stories.pdf)
 
 #### Use Case Diagram
 <p align="center">
   <img width="762" alt="Use Case Diagram" src="https://user-images.githubusercontent.com/64501760/146814104-70deed63-b3d5-4eee-9bef-501faf7706c7.png">
 
 </p>
+
+#### Detailed Use Cases
+[Detailed Use Cases.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7758192/Detailed.Use.Cases.pdf)
+
+
 
 
 ## Design
