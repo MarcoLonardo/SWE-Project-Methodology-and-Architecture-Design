@@ -66,7 +66,7 @@ With the requirements and the ensuing use case diagram identified in the previou
   - Modify Chart (Bar Chart, Line Chart)
   - Save Prefrences
   - Export Reports Offline
-3 . Read News
+3.  Read News
   - Click on the article
   - Save the article
 4. Access History
@@ -116,6 +116,24 @@ At this point given the many number of features and flows among them, we used th
 
 ### Relational database design
 
+For the database design, we firstly start with the conceptual database design by identifying the important entities, their attributes and the relationships among them. Similarly to identifying models in the application structure section, we can use the data driven approach (DDD) to identify the entities. Choosing the entities relevantly to our models and with a consistent approach will help us ensure that our database design is comprehnsive of all the models we have identified. In other words, we can ensure that we plan for for every specific model if we are able to understand their position in the relational database design. Thus, we obtain the following list of entities:
+
+1. Account
+2. Metric
+3. Country
+4. Year
+5. Articles
+6. Preferences
+7. History
+
+As we can see this list is very similiar to the list of our models. This similiarity will help us ensure that all the requirements of our web app will be considered from a database design perspective. Differently from the models, in entities, however, we don't find Exports. This is because we are assuming that the files that will be exported will be stored as a blob file. As these files cannot to be stored in a relation databese, exports is a model but will not be an entity of the relational database. 
+At this point, after having identified the attributes for each of the entities, we determine the relationships among entities and we describe them with the cardinality using the Crow's Foot Notation. 
+
+To further define the relationships, we 
+
+Subsequently, having defined the database conceptually, we can now work with the logical database design where we can start to validate the relations using normalisation. Thorugh normalisation we can ensure that when structuring data into a table we avoid update anomalies and reduce data redundancy. Thus, for each entity and its attributes (representing a table) we first identify the primary keys. Primary key  
+With foreign key we can link tables together and therefore we can remove redundant data by splitting tables into smaller ones.
+
 
 <p align="center">
   <img width="1014" alt="Relational Database Design" src="https://user-images.githubusercontent.com/64501760/146812275-d427ffdd-0600-4e33-8157-7fdea351a179.png">
@@ -129,7 +147,7 @@ At this point given the many number of features and flows among them, we used th
 ### Tests
 The tests have been performed in the tests directory: .
 
-After installing the pytest library, two tests have been peformed for this project. From the sample user class code provided, we decided to focus on testing the following two methods for this project: create_full_name and calculate_age. We are assuming that perfoming unit trsting on this code will help us test part of the User Class identified in the design section. Both of the tests have been determined and described below using the GIVEN-WHEN-THEN Approach. With this approach, we realized that the set-up condition is the same for both tests. Indeed, both methods (create_full_name and calculate_age) required us to create a new user for unit testing. Therefore, we used fixtures to provide a common function (general_user) for both tests, allowing us to reduce common code. As we have to do one test for each of the text functions, we will be using the "function" scope. Finally, eahc of the functions have been tested twice: both with  the correct data and the incorrect data.
+After installing the pytest library, two tests have been peformed for this project. From the sample user class code provided, we decided to focus on testing the following two methods for this project: create_full_name and calculate_age. We are assuming that perfoming unit trsting on this code will help us test part of the User Class identified in the design section. Both of the tests have been determined and described below using the GIVEN-WHEN-THEN Approach. With this approach, we realized that the set-up condition is the same for both tests. Indeed, both methods (create_full_name and calculate_age) required us to create a new user for unit testing. Therefore, we used fixtures to provide a common function (general_user) for both tests, allowing us to reduce common code. As we have to do one test for each of the text functions, we will be using the "function" scope. Finally, each of the functions have been tested twice: both with  the correct data and the incorrect data.
 
 The first test function test_create_full_name aims to test whether the correct full name is returned for a new user. 
 It can be, therefore, be described with the following GIVEN-WHEN-THEN Approach: 
