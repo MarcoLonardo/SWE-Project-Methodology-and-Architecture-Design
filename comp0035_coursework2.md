@@ -76,8 +76,10 @@ With the requirements and the ensuing use case diagram identified in the previou
 At this point, before wireframing the main goals, it was necessary to understand the relationships among these goals. In other words, once we understood what the users would like to achieve using our web app, we needed to understand how the user would navigate from one goal to another. Using the goals above, we sketched the main user flows using the following flow chart. From the chart, we can observe that once the users signs in, there are three key goals he/she can achieve (in orange): Access Account, Visualize Data, Read News and Access History. Each of these goals would then allow the user to more advanced actions (in grey) defined as the sub-goals. 
 
 <p align="center">
-  <img width="808" alt="User Flow" src="https://user-images.githubusercontent.com/64501760/146827346-ba90daa1-84a2-4aaa-80dc-e540d52094ad.png">
+  <img width="811" alt="User Flow" src="https://user-images.githubusercontent.com/64501760/146958984-be863fbb-e1a0-4fbc-a6cd-aac151495869.png">
+
 </p>
+
 
 #### Wireframes
 Finally, we were able to wireframe focusing specifically on the main goals (Access Account, Visualize Data, Read News and Access History) and describing their relationships. When wireframing, we considered designing for desktop use. This is becuase, as identified in the target audience, the EU Leadership team has more familiary with PCs and laptops and these dashboard will have to be accessed at work. Each of the wireframes has a wireframe reference number allowing us to associate the wireframe with specific routes and controllers of our Model-View-Controller (MVC) application. The following Wireframes will, in fact, represent the views of our MVC Application described in the next section.
@@ -108,7 +110,8 @@ Thus, using User Stories, we selected the following 8 models for our app. Attrib
 At this point given the many number of features and flows among them, we used the views (wireframes) to identify the URL and the associated controller function. From the table below, we can see that, excluding the landing page (index), there are 8 routes, each of the routes correspond to a particular view (and therefore, user goal) we have identified in the wireframe section. The 9 routes and the relating controller functions are described in the following table.
 
 <p align="center">
-  <img width="759" alt="Route and Controllers" src="https://user-images.githubusercontent.com/64501760/146827296-ed4eaf5a-7306-4f58-932a-5d010d3099b4.png">
+  <img width="745" alt="Route and Controllers" src="https://user-images.githubusercontent.com/64501760/146958852-a867e5c5-a2ac-4c50-9b11-87947ede21f6.png">
+
 </p>
 
 
