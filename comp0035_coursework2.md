@@ -22,15 +22,11 @@ To elicit requirements for this project, we decided to use the following methods
 The second step is to build upon these essential requirements (elicited from the document analysis) using brainstorming. With the brainstorming method, we can eliciti new desired requirements creatively, helping the team provide can help us provide more value. The aim is to promote as many ideas as possible and selecting the most important through. One of the challenges of using brainstorming is that the quality of the sessions can be limited by the Organization Politics or the intersonal traits (reference, the EU Team in this case). Nevertheless, as a result of this combined choice, we have able to have a more balanced approach to eliciting requirements. 
 In fact we can ensure that we creatively think of all the potential uselful requirements, yet remaining pragmatic with an agreed set of key existing requirements from comparable documents. 
 
-https://babokpage.wordpress.com/techniques/document-analysis/
-https://babokpage.wordpress.com/techniques/brainstorming/
-
 ### Requirement specification method
 
 Considering the choice of our methodology, Scrum, the best specification method are User Stories, however, we will also be using Use Cases for the most crucial requirements. We choose to use User Stories because we want to understand and priorize well the needs of the European Leadership Team. With a simple format, user stories help us to understand requirements from a user perspective decribing crearly what the user would like to achieve. This would allow us to understand why users might want a particular requirement and priotise accordingly. With USer Stories, we can also reiterate frequently with the customers, describing our understanding of the requirements in a non'technical way. In other words, this method can help us assess and adapt easily to the changing requirements. 
 One of the challenges as a result of this choice is that with user story we might  not capture the whole value of data and the insights. Neverthelss, given the changing requirements, meeting the expectations is our key prioroty and we can leverage the acceptence criteria as a way to be more specific about each functional requirement. Moreover, the most critical and data'oriented aspects of the requirements will be analysed with use cases to ensure that crucial data insights are not lost.
 
-https://www.digite.com/agile/user-stories/
 
 ### Prioritisation method
 
@@ -38,14 +34,15 @@ To prioritise our requirements, we chose forced ranking prioritisation. This met
 
 One advantage of this is that we can focus on two at the time, making it easier to rank what are the most importnant ranks. Similarly, this means that ranking the least importart will be more difficult  and therefore one potential challenge of this method is agreeing on the least importnat requirements. Nevertheless, as we assume that requirements change, the precise rank of the least important requirements is not very important as we aim to iterate this prioritisation often. Another way of dealing with this challenge would be to divide groups in smaller ones when making a ranking decision.
 
-https://www.linkedin.com/learning/agile-product-owner-role-techniques/forced-ranking-prioritization?autoAdvance=true&autoSkip=false&autoplay=true&resume=false&u=69919578
 
 ### Documented and prioritised requirements
 Link to the full list of documented and prioritised requirements.
 
+
+#### User Stories
 [Requirements - Prioritised User Stories.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7748576/Requirements.-.Prioritised.User.Stories.pdf)
 
-
+#### Use Case Diagram
 <p align="center">
   <img width="762" alt="Use Case Diagram" src="https://user-images.githubusercontent.com/64501760/146814104-70deed63-b3d5-4eee-9bef-501faf7706c7.png">
 
@@ -55,7 +52,8 @@ Link to the full list of documented and prioritised requirements.
 ## Design
 ### Structure and flow of the interface
 
-To Model the User Interface, we decided to use Wireframing becuase they provide a prototype of the end product with the minimimal effort. In fact, without spending too many resources on the visual aspect, with Lo-Fi wireframes we can interate quickly to obtain feedback and refine existing requirements (https://marvelapp.com/blog/why-you-should-add-wireframing-to-your-design-process/). Thus, it is a great way to complement our Scrum Methology and address the customers' changing requirements. 
+#### Goals
+To Model the User Interface, we decided to use Wireframing becuase they provide a prototype of the end product with the minimimal effort. In fact, without spending too many resources on the visual aspect, with Lo-Fi wireframes we can interate quickly to obtain feedback and refine existing requirements. Thus, it is a great way to complement our Scrum Methology and address the customers' changing requirements. 
 With the requirements and the ensuing use case diagram identified in the previous section, we decided to wireframe starting with the main goals of the users. Thus, we categorized all the goals and sub-goals in the following way:
 
 1. Access Account
@@ -74,20 +72,21 @@ With the requirements and the ensuing use case diagram identified in the previou
   - My Saved Articles
 
 
-
+#### User Flows
 At this point, before wireframing the main goals, it was necessary to understand the relationships among these goals. In other words, once we understood what the users would like to achieve using our web app, we needed to understand how the user would navigate from one goal to another. Using the goals above, we sketched the main user flows using the following flow chart. From the chart, we can observe that once the users signs in, there are three key goals he/she can achieve (in orange): Access Account, Visualize Data, Read News and Access History. Each of these goals would then allow the user to more advanced actions (in grey) defined as the sub-goals. 
 
 <p align="center">
   <img width="808" alt="User Flow" src="https://user-images.githubusercontent.com/64501760/146827346-ba90daa1-84a2-4aaa-80dc-e540d52094ad.png">
 </p>
 
-
+#### Wireframes
 Finally, we were able to wireframe focusing specifically on the main goals (Access Account, Visualize Data, Read News and Access History) and describing their relationships. When wireframing, we considered designing for desktop use. This is becuase, as identified in the target audience, the EU Leadership team has more familiary with PCs and laptops and these dashboard will have to be accessed at work. Each of the wireframes has a wireframe reference number allowing us to associate the wireframe with specific routes and controllers of our Model-View-Controller (MVC) application. The following Wireframes will, in fact, represent the views of our MVC Application described in the next section.
 
 ### Application structure
 
-For our Flask web application, we are going to use the Model-View_Controller pattern. This model seprates the input, the processing and the output of the apps in three components: Models, Views and Controllers. This separation can be very helpful for our project becuase if requirements changes do not affect the whole architecture of the model https://www.brainvire.com/six-benefits-of-using-mvc-model-for-effective-web-application-development/.
+For our Flask web application, we are going to use the Model-View_Controller pattern. This model seprates the input, the processing and the output of the apps in three components: Models, Views and Controllers. This separation can be very helpful for our project becuase if requirements changes do not affect the whole architecture of the model.
 
+#### Models
 The first step is to design the models using the Data Driven Design (DDD) approach, where nouns, adjectives and verbs suggest classes, attrtibutes and method, respectively. 
 Thus, using User Stories, we selected the following 8 models for our app. Attributes and methods for each of the classes is defined in the with UML class diagrams below.
 
@@ -105,7 +104,7 @@ Thus, using User Stories, we selected the following 8 models for our app. Attrib
   <img width="698" alt="Class Diagram UML" src="https://user-images.githubusercontent.com/64501760/146812327-a3033557-4fc2-46dd-b9ec-f4eb7e2884c3.png">
 </p>
 
-
+#### Routes and Controllers
 At this point given the many number of features and flows among them, we used the views (wireframes) to identify the URL and the associated controller function. From the table below, we can see that, excluding the landing page (index), there are 8 routes, each of the routes correspond to a particular view (and therefore, user goal) we have identified in the wireframe section. The 9 routes and the relating controller functions are described in the following table.
 
 <p align="center">
