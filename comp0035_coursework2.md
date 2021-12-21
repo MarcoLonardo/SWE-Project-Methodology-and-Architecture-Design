@@ -18,19 +18,20 @@ Nevertheless, twith the diagram, we could identify a few additional features rel
 
 ### Requirements identification methods
 
-To elicit requirements for this project, we decided to use the following methods: Document Analysis and Brainstorming. As the client has not been very specific in the deliverables, we believe that this combination is the best way to elict requirements because we can creatively think of the client's desired features while remaining pragmatic with real and comparable solutions. In fact, firstly, we would use document analysis to enrure that we capture with no ambiguity the main and most essential requirements from existing solutions. This is a great way to address the client's vague description becuase we can refer to existing examples. As a comparable example for document analysis, we would mainly levarage the World Bank Platform, to understand what requirements and details are relevant to the web application we are building. Reviewing and confirming these requirements with the client will be essential becuase we are able to capture requirements based on a real example. 
-The second step is to build upon these essential requirements (elicited from the document analysis) using brainstorming. With the brainstorming method, we can eliciti new desired requirements creatively, helping the team provide can help us provide more value. The aim is to promote as many ideas as possible and selecting the most important through. One of the challenges of using brainstorming is that the quality of the sessions can be limited by the Organization Politics or the intersonal traits (reference, the EU Team in this case). Nevertheless, as a result of this combined choice, we have able to have a more balanced approach to eliciting requirements. 
+To elicit requirements for this project, we decided to use the following methods: Document Analysis and Brainstorming. As the client has not been very specific in the deliverables, we believe that this combination is the best way to elict requirements because we can creatively think of the client's desired features while remaining pragmatic with real and comparable solutions. In fact, firstly, we would use document analysis to ensure that we capture with no ambiguity the main and most essential requirements from existing solutions. This is a great way to address the client's vague description becuase we can refer to existing examples (Document Analysis, n.d.). As a comparable example for document analysis, we would mainly levarage the World Bank Platform, to understand what requirements and details are relevant to the web application we are building. Reviewing and confirming these requirements with the client will be essential becuase we are able to capture requirements based on a real example. 
+The second step is to build upon these essential requirements (elicited from the document analysis) using brainstorming. With the brainstorming method, we can eliciti new desired requirements creatively, helping the team provide can help us provide more value. The aim is to promote as many ideas as possible and selecting the most important through. One of the challenges of using brainstorming is that the quality of the sessions can be limited by the Organization Politics or the intersonal traits (Brainstorming, n.d.).
+Nevertheless, as a result of this combined choice, we have able to have a more balanced approach to eliciting requirements. 
 In fact we can ensure that we creatively think of all the potential uselful requirements, yet remaining pragmatic with an agreed set of key existing requirements from comparable documents. 
 
 ### Requirement specification method
 
-Considering the choice of our methodology, Scrum, the best specification method are User Stories, however, we will also be using Use Cases for the most crucial requirements. We choose to use User Stories because we want to understand and priorize well the needs of the European Leadership Team. With a simple format, user stories help us to understand requirements from a user perspective decribing crearly what the user would like to achieve. This would allow us to understand why users might want a particular requirement and priotise accordingly. With USer Stories, we can also reiterate frequently with the customers, describing our understanding of the requirements in a non'technical way. In other words, this method can help us assess and adapt easily to the changing requirements. 
-One of the challenges as a result of this choice is that with user story we might  not capture the whole value of data and the insights. Neverthelss, given the changing requirements, meeting the expectations is our key prioroty and we can leverage the acceptence criteria as a way to be more specific about each functional requirement. Moreover, the most critical and data'oriented aspects of the requirements will be analysed with use cases to ensure that crucial data insights are not lost.
+Considering the choice of our methodology, Scrum, the best specification method are User Stories, however, we will also be using Use Cases for the more complex requirements related to the data visualizations. We choose to use User Stories because we want to understand and priorize well the needs of the European Leadership Team. With a simple format, user stories help us to understand requirements from a user perspective decribing crearly what the user would like to achieve (User Stories: What They Are And Why And How To Use Them, n.d.). This would allow us to understand why users might want a particular requirement and priotise accordingly. With User Stories, we can also reiterate frequently with the customers, describing our understanding of the requirements in a non'technical way. In other words, this method can help us assess and adapt easily to the changing requirements. 
+One of the challenges as a result of this choice is that with user story we might not capture the whole value of data insights, given the many combinations of parameters (i.e. metrics, countries and years). Neverthelss, given the changing requirements, meeting the expectations is our key priority and we can leverage the acceptence criteria as a way to be more specific about the data requests. Moreover, as  there are different parameters affecting the behaviours of the data visualization, we will be Use Cases to analyse specifically requirements related to tailoring the visualization and saving the preferences. As the these requirements are more complex, use cases will  help us to ensure that we can clearly define pre-conditions, main and alternative flows. With Use case we will also analyse the log in requirements to facilitate our work when design the web app and the relational database. 
 
 
 ### Prioritisation method
 
-To prioritise our requirements, we chose forced ranking prioritisation. This method involves looking at any two requirements at the time and choose which one is more important collectively. The main resons why this is the best method for our project is becuase with forced ranking prioritiation, we can prioritise based on a give user role or persona. Not only this alighs very well with user stories, but it also allows us to choose requirements empathazing with what users from the leadrship TEam want or need.
+To prioritise our requirements, we chose forced ranking prioritisation. This method involves looking at any two requirements at the time and choose which one is more important collectively. The main resons why this is the best method for our project is becuase with forced ranking prioritiation, we can prioritise based on a give user role or persona(Wick, 2017). Not only this alighs very well with user stories, but it also allows us to choose requirements empathazing with what users from the leadrship TEam want or need.
 
 One advantage of this is that we can focus on two at the time, making it easier to rank what are the most importnant ranks. Similarly, this means that ranking the least importart will be more difficult  and therefore one potential challenge of this method is agreeing on the least importnat requirements. Nevertheless, as we assume that requirements change, the precise rank of the least important requirements is not very important as we aim to iterate this prioritisation often. Another way of dealing with this challenge would be to divide groups in smaller ones when making a ranking decision.
 
@@ -42,14 +43,16 @@ Link to the full list of documented and prioritised requirements.
 #### User Stories
 [Requirements - Prioritised User Stories.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7758189/Requirements.-.Prioritised.User.Stories.pdf)
 
+#### Detailed Use Cases
+[Detailed Use Cases.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7758192/Detailed.Use.Cases.pdf)
+
+
 #### Use Case Diagram
+
 <p align="center">
   <img width="762" alt="Use Case Diagram" src="https://user-images.githubusercontent.com/64501760/146814104-70deed63-b3d5-4eee-9bef-501faf7706c7.png">
 
 </p>
-
-#### Detailed Use Cases
-[Detailed Use Cases.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7758192/Detailed.Use.Cases.pdf)
 
 
 
@@ -58,7 +61,7 @@ Link to the full list of documented and prioritised requirements.
 ### Structure and flow of the interface
 
 #### Goals
-To Model the User Interface, we decided to use Wireframing becuase they provide a prototype of the end product with the minimimal effort. In fact, without spending too many resources on the visual aspect, with Lo-Fi wireframes we can interate quickly to obtain feedback and refine existing requirements. Thus, it is a great way to complement our Scrum Methology and address the customers' changing requirements. 
+To Model the User Interface, we decided to use Wireframing becuase they provide a prototype of the end product with the minimimal effort. In fact, without spending too many resources on the visual aspect, with Lo-Fi wireframes we can interate quickly to obtain feedback and refine existing requirements(Adojutelegan, 2021). Thus, it is a great way to complement our Scrum Methology and address the customers' changing requirements. 
 With the requirements and the ensuing use case diagram identified in the previous section, we decided to wireframe starting with the main goals of the users. Thus, we categorized all the goals and sub-goals in the following way:
 
 1. Access Account
@@ -239,19 +242,11 @@ Results with incorrect data only for the calculate_full_name method
 
 ## References
 
-BABOK Page. n.d. Document Analysis. [online] Available at: <https://babokpage.wordpress.com/techniques/document-analysis/> [Accessed 20 December 2021].
-
-BABOK Page. n.d. Brainstorming. [online] Available at: <https://babokpage.wordpress.com/techniques/brainstorming/> [Accessed 20 December 2021].
-
-
-Digite. n.d. User Stories: What They Are And Why And How To Use Them. [online] Available at: <https://www.digite.com/agile/user-stories/> [Accessed 20 December 2021].
-
-
-Wick, A., 2017. Forced ranking prioritization - Agile Product Owner Role: Techniques Video Tutorial | LinkedIn Learning, formerly Lynda.com. [online] LinkedIn. Available at: <https://www.linkedin.com/learning/agile-product-owner-role-techniques/forced-ranking-prioritization?autoAdvance=true&autoSkip=false&autoplay=true&resume=false&u=69919578> [Accessed 20 December 2021].
-
-
-
-Adojutelegan, J., 2021. Why you should add Wireframing to your design process | Marvel Blog. [online] Marvel Blog. Available at: <https://marvelapp.com/blog/why-you-should-add-wireframing-to-your-design-process/> [Accessed 20 December 2021].
+1. BABOK Page. n.d. Document Analysis. [online] Available at: <https://babokpage.wordpress.com/techniques/document-analysis/> [Accessed 20 December 2021].
+2. BABOK Page. n.d. Brainstorming. [online] Available at: <https://babokpage.wordpress.com/techniques/brainstorming/> [Accessed 20 December 2021].
+3. Digite. n.d. User Stories: What They Are And Why And How To Use Them. [online] Available at: <https://www.digite.com/agile/user-stories/> [Accessed 20 December 2021].
+4. Wick, A., 2017. Forced ranking prioritization - Agile Product Owner Role: Techniques Video Tutorial | LinkedIn Learning, formerly Lynda.com. [online] LinkedIn. Available at:    <https://www.linkedin.com/learning/agile-product-owner-role-techniques/forced-ranking-prioritization?autoAdvance=true&autoSkip=false&autoplay=true&resume=false&u=69919578>      [Accessed 20 December 2021].
+5. Adojutelegan, J., 2021. Why you should add Wireframing to your design process | Marvel Blog. [online] Marvel Blog. Available at: https://marvelapp.com/blog/why-you-should-      add-wireframing-to-your-design-process/> [Accessed 20 December 2021].
 
 
 
