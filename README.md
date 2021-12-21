@@ -96,11 +96,11 @@ Finally, we were able to wireframe focusing specifically on the four main goals 
 
 ### Application structure
 
-For our Flask web application, we are going to use the Model-View_Controller pattern. This model seprates the input, the processing and the output of the apps in three components: Models, Views and Controllers (Six Benefits Of Using MVC Model For Effective Web Application Development, n.d.). This separation can be very helpful for our project becuase if requirements changes do not affect the whole architecture of the model.
+For our Flask web application, we are going to use the Model-View_Controller pattern. This model seprates the input, the processing and the output of the apps in three components: Models, Views and Controllers (Six Benefits Of Using MVC Model For Effective Web Application Development, n.d.). This separation can be very helpful for our project because if the requirements changes, these will not affect the whole architecture of the model.
 
 #### Models
-The first step is to design the models using the Data Driven Design (DDD) approach, where nouns, adjectives and verbs suggest classes, attrtibutes and method, respectively. 
-Thus, using User Stories, we selected the following 8 models for our app. Attributes and methods for each of the classes is defined in the with UML class diagrams below.
+The first step is to design the models using the Data Driven Design (DDD) approach, where nouns, adjectives and verbs suggest classes, attributes and method, respectively. 
+Thus, using User Stories, we selected the following 8 models for our app. Attributes and methods for each of the classes are defined in the with UML class diagrams below.
 
 1. Account
 2. Metric
@@ -117,7 +117,7 @@ Thus, using User Stories, we selected the following 8 models for our app. Attrib
 </p>
 
 #### Routes and Controllers
-At this point given the many number of features and flows among them, we used the views (wireframes) to identify the URL and the associated controller function. From the table below, we can see that, excluding the landing page (index), there are 8 routes, each of the routes correspond to a particular view (and therefore, user goal) we have identified in the wireframe section. The 9 routes and the relating controller functions are described in the following table.
+At this point given the many number of flows among the models, we used the views (wireframes) and the user flows diagram to identify the the routes and the associated controller function. From the table below, we can see that, excluding the landing page (index), there are 8 routes, each of the routes correspond to a particular view (and therefore, user goal) we have identified in the wireframe section. The 9 routes and the relating controller functions are described in the following table.
 
 <p align="center">
   <img width="754" alt="Route and Controllers" src="https://user-images.githubusercontent.com/64501760/146974502-98ab6c9e-96d3-4195-9a19-fcedb22aa7ba.png">
@@ -130,7 +130,7 @@ At this point given the many number of features and flows among them, we used th
 ### Relational database design
 
 #### Conceptual Design
-For the database design, we firstly start with the conceptual database design by identifying the important entities, their attributes and the relationships among them. Similarly to identifying models in the application structure section, we can use the data driven approach (DDD) to identify the entities. Choosing the entities relevantly to our models and with a consistent approach will help us ensure that our database design is comprehnsive of all the models we have identified. In other words, we can ensure that we plan for for every specific model if we are able to understand their position in the relational database design. Thus, we obtain the following list of entities:
+For the database design, we firstly start with the conceptual database design by identifying the important entities, their attributes and the relationships among them. Similarly to identifying models in the application structure section, we can use the data driven approach (DDD) to identify the entities. Choosing the entities relevantly to our models and with a consistent approach will help us ensure that our database design is comprehensive of all the models we have identified. In other words, we can ensure that we plan for for every specific model if we are able to understand their position in the relational database design. Thus, we obtain the following list of entities:
 
 1. Account
 2. Metric
@@ -139,20 +139,19 @@ For the database design, we firstly start with the conceptual database design by
 5. Articles
 6. Preferences
 7. History
-8. Exports
-9. Selection
+8. Selection
 
-As we can see this list is very similiar to the list of our models. This similiarity will help us ensure that all the requirements of our web app will be considered from a database design perspective. Differently from the models, in entities, however, we don't find Exports. This is because we are assuming that the files that will be exported will be stored as a blob file. As these files cannot to be stored in a relation databese, exports is a model but will not be an entity of the relational database. We also do not find the entity selection which has been added specifically to address normalisation in the logical design stage.
-At this point, after having identified the attributes for each of the entities, we determine the relationships among entities and we describe them with the cardinality using the Crow's Foot Notation. 
+As we can see this list is very similiar to the list of our models. This similiarity will help us ensure that all the requirements of our web app will be considered from a database design perspective. Neverthelss, differently from the models, in entities we don't find Exports. This is because we are assuming that the files that will be exported are stored as a blob file. As these files cannot to be stored in a relation databese, we keep exports as a model but it will not be an entity of the relational database. Another difference is that selection has been added as an entity only to address normalisation in the logical design stage.
+At this point, after having identified the attributes for each of the entities, we determine the relationships among entities and we describe thier cardinality using the Crow's Foot Notation. 
 
 #### Logical Design
-Subsequently, having defined the database conceptually, we can now work with the logical database design where we can start to validate the relations using normalisation. Thorugh normalisation we can ensure that when structuring data into a table we avoid update anomalies and reduce data redundancy. Thus, for each entity and its attributes (representing a table) we first identify the primary keys and the correspoding foreign keys in the other tables. Primary keys are defined with the attribute ID and they are integer. This ensures that each primary key represents a column guranteed to be unique for each record. For primary/foreign keys, it was also important to add the following specify in the contrains that they cannot be null and that when a redcord is added or deleted a unique. Finally, it was necessary to ensure that for all the one-to-many relationships, the primary key in one tables becomes the foreign key in the other table. This makes it very clar to understand what are the "common" columns that link tables together. As a result, we could now eliminate redundant data because through this process we could split larger tables into small ones. For instance, instead of repeating the access date attribute both for articles and preferences, we can now retrive that looking at the history entity. This allowed us to avoid transitively dependant attributs, grouping attributes in a more efficient and meaningful way. 
+Having defined the database conceptually, we can now work with the logical database design where we can start to validate the relations using normalisation. Thorugh normalisation we can ensure that when structuring data into a table we avoid update anomalies and reduce data redundancy. Thus, for each entity and its attributes (representing a table) we first identify the primary keys and the correspoding foreign keys in the other tables. Primary keys are defined with the attribute ID and they are integer. This ensures that each primary key represents a column guranteed to be unique for each record. For primary/foreign keys, it was also important to add the following specify in the contrains that they cannot be null and that when a redcord is added or deleted a unique. Finally, it was necessary to ensure that for all the one-to-many relationships, the primary key in one tables becomes the foreign key in the other table. This makes it very clar to understand what are the "common" columns that link tables together. As a result, we could now eliminate redundant data because through this process we could split larger tables into small ones. For instance, instead of repeating the access date attribute both for articles and preferences, we can now retrive that attribute looking at the history entity. This allowed us to avoid transitive functional dependency, grouping attributes in a more efficient and meaningful way. 
 
-Moreover, an additional key entity, Selection, has been added. Introducing this entity was very important for the process of normalisation, because initially the preference entity had a many-to-many relationship with the entities metric, year and countries. This is happening because we are assuming that the user can select as preferences multiple years, countries and metrics. Indeed, flexibility in tailoring the visualization is one of the key requirements identified in the user stories, therefore it was importnant to design the database accordinly. To achieve this, we had to break-down this many-to-many relationship, introducing an additional table that would capture the selection of multiple attributes uniquely. A composite primary key has been considered for this particular scenario, nevertheless we believed it was worth adding the Seelction entity to improve clarity and intuitiveness the overall database design.
+Moreover, an additional key entity, Selection, has been added. Introducing this entity was very important for the process of normalisation, because initially the preference entity had a many-to-many relationship with the entities metric, year and countries. This is happening because we are assuming that the user can select as preferences multiple years, countries and metrics. Indeed, flexibility in tailoring the visualization is one of the key requirements identified in the user stories, therefore it was important to design the database accordinly. To achieve this, we had to break-down this many-to-many relationship, introducing an additional table that would capture the selection of multiple attributes uniquely. A composite primary key has been considered for this particular scenario, nevertheless we believed it was worth adding the Seelction entity to improve clarity and intuitiveness of the overall database design.
 
 After describing the different contraints of each attribute we can describe our relational database design with the Entity Relationship Diagram below. 
-Starting from the left we can see that to each account we have associated preferences and articles (linked with the User ID). These associations are decribed with the one-to-many relationships becuase one user can have zero or multiple preferences or articles but saved articles and preferences have must have at least and at most one account.  
-Articles and preferences have unique IDs, a title/name and are associated to History with the Record ID. History would allow to retrive the Access Date, Url and the record type which describes whether the saved obejct is an article or a preference. The relationships between History and Article/Preference is a one-to-many because Articles and preferences, if saved, must have at least one record. Assuming that an article/preference can be saved multiple times, a preference or article can have multiple records. One saved record, however, must have at least one article/preference to be associated to and cannot be associate to multiple articles/preferences. Moving on into preferences specifically, we see that they are associated to selection with the selection ID and a one-to-many relationship. While one preference needs to have at least one selection, one preference can be made up of multiple selections as assumed previously. Nevertheless a selection needs to have at least one preference and can be associated at most to one preference only. Metric, Country and Year (with the respective IDs) is then linked to Selection (with the respective IDs) via a one-to-many relationships. Focusing on Country as an example, one selection needs at least one country but can include one country at the time. One country needs to be part of at least of a selection but can have be associated to multiple selections.
+Starting from the left we can see that to each accounts we have associated preferences and articles (linked with the User ID). These associations are decribed with the one-to-many relationships becuase one user can have zero or multiple preferences or articles but saved articles and preferences must have at least and at most one account.  
+Articles and preferences have unique IDs, a title/name and are associated to History with the Record ID. History would allow to retrive the Access Date, Url and the record type which describes whether the saved obejct is an article or a preference. The relationships between History and Article/Preference is a one-to-many because Articles and preferences, if saved, must have at least one record. Assuming that an article/preference can be saved multiple times, a preference or article can have multiple records. One saved record, however, must have at least one article/preference to be associated to and cannot be associate to multiple articles/preferences. Moving on into preferences specifically, we see that they are associated to selection with the selection ID and a one-to-many relationship. While one preference needs to have at least one selection, one preference can be made up of multiple selections as assumed previously. Nevertheless a selection needs to have at least one preference and can be associated at most to one preference only. Metric, Country and Year (with the respective IDs) are then linked to Selection (with the respective IDs) via a one-to-many relationships. Focusing on Country as an example, one selection needs at least one country but can include one country at the time. One country needs to be part of at least of a selection but can have be associated to multiple selections.
 
 
 <p align="center">
@@ -166,10 +165,11 @@ Articles and preferences have unique IDs, a title/name and are associated to His
 ### Choice of unit testing library
 
 ### Tests
-The tests have been performed in the tests directory: .
+The tests have been performed in the tests directory: https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/tree/master/tests. 
 
-After installing the pytest library, two tests have been peformed for this project. From the sample user class code provided, we decided to focus on testing the following two methods for this project: create_full_name and calculate_age. We are assuming that perfoming unit trsting on this code will help us test part of the User Class identified in the design section. Both of the tests have been determined and described below using the GIVEN-WHEN-THEN Approach. With this approach, we realized that the set-up condition is the same for both tests. Indeed, both methods (create_full_name and calculate_age) required us to create a new user for unit testing. Therefore, we used fixtures to provide a common function (general_user) for both tests, allowing us to reduce common code. As we have to do one test for each of the text functions, we will be using the "function" scope. Finally, each of the functions have been tested twice: both with  the correct data and the incorrect data.
+After installing the pytest library ,from the sample user class code provided, we decided to focus on testing the following two methods for this project: create_full_name and calculate_age. We are assuming that perfoming unit testing on this code will help us test part of the Account model identified in the design section. Both of the tests have been determined and described below using the GIVEN-WHEN-THEN Approach. With this approach, we realized that the set-up condition is the same for both tests. Indeed, both methods (create_full_name and calculate_age) required us to create a new user for unit testing. Therefore, we used fixtures to provide a common function (general_user) for both tests, allowing us to reduce common code. As the fixture will need to be executed for each of the test functions (Gao, 2020), we will be using the "function" scope. Finally, each of the functions have been tested twice: both with the correct data and the incorrect data.
 
+#### Test function 1: test_create_full_name
 The first test function test_create_full_name aims to test whether the correct full name is returned for a new user. 
 It can be, therefore, be described with the following GIVEN-WHEN-THEN Approach: 
    
@@ -180,12 +180,13 @@ It can be, therefore, be described with the following GIVEN-WHEN-THEN Approach:
     THEN the full_name should be James White
 
     """
-  
+    
+#### Test Function 2: test_calculate_age 
 The second function test_calculate_age aims to test whether the correct age is returned given the date of birth of a new user. It was necessary to convert the date of birth from string to date, in order to correctly test this function. It can be descibed with the following GIVEN-WHEN-THEN Approach: 
     
     """
     GIVEN a new user (created as fixture) born in 1998
-    WHEN his date of birth (dob) is passed to the "calculate_age function"
+    WHEN his date of birth (dob) is passed to the "calculate_age" function
     THEN the age should be equal to 23
 
     """
@@ -246,6 +247,7 @@ Results with incorrect data only for the calculate_full_name method
 4. Wick, A., 2017. Forced ranking prioritization - Agile Product Owner Role: Techniques Video Tutorial | LinkedIn Learning, formerly Lynda.com. [online] LinkedIn. Available at:    <https://www.linkedin.com/learning/agile-product-owner-role-techniques/forced-ranking-prioritization?autoAdvance=true&autoSkip=false&autoplay=true&resume=false&u=69919578>      [Accessed 20 December 2021].
 5. Adojutelegan, J., 2021. Why you should add Wireframing to your design process | Marvel Blog. [online] Marvel Blog. Available at: https://marvelapp.com/blog/why-you-should-      add-wireframing-to-your-design-process/> [Accessed 20 December 2021].
 6. Brainvire.com. n.d. Six Benefits Of Using MVC Model For Effective Web Application Development. [online] Available at: <https://www.brainvire.com/six-benefits-of-using-mvc-model-for-effective-web-application-development/> [Accessed 21 December 2021].
+7. Gao, X., 2020. Understand 5 Scopes of Pytest Fixtures. [online] Medium. Available at: <https://betterprogramming.pub/understand-5-scopes-of-pytest-fixtures-1b607b5c19ed>        [Accessed 21 December 2021].
 
 
 
