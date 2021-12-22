@@ -1,7 +1,6 @@
 # Coursework 2
 
-Most students will use the same repository for coursework 2. You may use this file to present the results of that
-coursework if you wish. Alternatively you can use video or audio to provide the explanations instead of writing them.
+Coursework 1 Data and Material has been  included in the folder for context and reference.
 
 ## Requirements definition and analysis
 Working with our customer, the EU Commission, and considering the problem statement, the DataFirst team has created a context diagram to agree and define the scope of the web app. 
