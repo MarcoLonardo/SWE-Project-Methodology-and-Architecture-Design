@@ -29,7 +29,7 @@ One of the challenges of this choice is that, given the many combinations of par
 
 ### Prioritisation method
 
-To prioritise our requirements, we chose forced ranking prioritisation. This method involves looking at any two requirements at the time and choosing which one is more important collectively. The main reason why this is the best method for our project is because that with forced ranking prioritisation, we can prioritise based on a given user role or persona (Wick, 2017). Not only does this align very well with user stories, but it also allows us to choose requirements empathizing with what the EU Users need.
+To prioritise our requirements, we chose forced ranking prioritisation. This method involves looking at any two requirements at the time and choosing which one is more important collectively. The main reason why this is the best method for our project is that with forced ranking prioritisation, we can prioritise based on a given user role or persona (Wick, 2017). Not only does this align very well with user stories, but it also allows us to choose requirements empathizing with what the EU Users need.
 
 One advantage of this is that we can focus on two requirements at the time, making it easier to rank what are the most important ranks. Similarly, this means that ranking the least important will be more difficult and therefore one potential challenge of this method is agreeing on the least important requirements. Nevertheless, as we assume that requirements change, the precise rank of the least important requirements is not very important as we aim to iterate this prioritisation often. Another way of dealing with this challenge would be to divide groups into smaller ones when making a ranking decision.
 
@@ -59,7 +59,7 @@ Link to the full list of documented and prioritised requirements.
 ### Structure and flow of the interface
 
 #### Goals
-To Model the User Interface, we decided to use Wireframes becuase they provide a prototype of the end product with the minimimal effort. In fact, without spending too many resources on the visual aspect, with Lo-Fi wireframes we can interate quickly to obtain feedback and refine existing requirements (Adojutelegan, 2021). Thus, it is a great way to complement our Scrum Methology and address the customers' changing requirements. 
+To Model the User Interface, we decided to use Wireframes because they provide a prototype of the end product with minimal effort. In fact, without spending too many resources on the visual aspect, with Lo-Fi wireframes we can iterate quickly to obtain feedback and refine existing requirements (Adojutelegan, 2021). Thus, it is a great way to complement our Scrum Methodology and address the customers' changing requirements. 
 With the requirements and the ensuing use case diagram identified in the previous section, we decided to wireframe starting with the main goals of the users. Thus, we categorized all the goals and sub-goals in the following way:
 
 1. Access Account
@@ -68,7 +68,7 @@ With the requirements and the ensuing use case diagram identified in the previou
 2. Visualize Data
   - Filter for parameters (Years, Country)
   - Modify Chart (Bar Chart, Line Chart)
-  - Save Prefrences
+  - Save Preferences
   - Export Reports Offline
 3.  Read News
   - Click on the article
@@ -79,7 +79,7 @@ With the requirements and the ensuing use case diagram identified in the previou
 
 
 #### User Flows
-At this point, before wireframing the main goals, it was necessary to understand the relationships among these goals. In other words, once we understood what the users would like to achieve using our web app, we needed to understand how the user would navigate from one goal to another. Using the goals above, we sketched the main user flows using the following flow chart. From the chart, we can observe that once the users signs in, there are four key goals he/she can achieve (in orange): Access Account, Visualize Data, Read News and Access History. Each of these goals would then allow the user to more advanced actions (in grey) defined as the sub-goals. 
+At this point, before wireframing the main goals, it was necessary to understand the relationships among these goals. In other words, once we understood what the users would like to achieve using our web app, we needed to understand how the user would navigate from one goal to another. Using the goals above, we sketched the main user flows using the following flow chart. From the chart, we can observe that once the users sign in, there are four key goals they can achieve (in orange): Access Account, Visualize Data, Read News and Access History. Each of these goals would then allow the user to more advanced actions (in grey) defined as the sub-goals. 
 
 <p align="center">
   <img width="811" alt="User Flow" src="https://user-images.githubusercontent.com/64501760/146958984-be863fbb-e1a0-4fbc-a6cd-aac151495869.png">
@@ -88,7 +88,7 @@ At this point, before wireframing the main goals, it was necessary to understand
 
 
 #### Wireframes
-Finally, we were able to wireframe focusing specifically on the four main goals (Access Account, Visualize Data, Read News and Access History) and describing their relationships. When wireframing, we considered designing for desktop use. This is becuase we are assuming, as identified in the target audience section, the EU Leadership team has more familiary with PCs and laptops and these dashboards will have to be accessed at work. Each of the wireframes has a wireframe reference number allowing us to associate the wireframe with specific routes and controllers of our Model-View-Controller (MVC) application. In fact, The following Wireframes will represent the views of our MVC Application described in the next section. The flows among the different views are described in the the Wireframes Flows.pdf file.
+Finally, we were able to wireframe focusing specifically on the four main goals (Access Account, Visualize Data, Read News and Access History) and describing their relationships. When wireframing, we considered designing for desktop use. This is becuase we are assuming, as identified in the target audience section, the EU Leadership team has more familiarity with PCs and laptops and these dashboards will have to be accessed at work. Each of the wireframes has a wireframe reference number allowing us to associate the wireframe with specific routes and controllers of our Model-View-Controller (MVC) application. In fact, The following Wireframes will represent the views of our MVC Application described in the next section. The flows among the different views are described in the Wireframes Flows.pdf file.
 
 [Wireframes.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7757098/Wireframes.pdf)
 [Wireframes Flows.pdf](https://github.com/ucl-comp0035/coursework-1-MarcoLonardo/files/7757099/Wireframes.Flows.pdf)
