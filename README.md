@@ -97,7 +97,7 @@ Finally, we were able to wireframe focusing specifically on the four main goals 
 
 ### Application structure
 
-For our Flask web application, we are going to use the Model-View-Controller pattern. This model separates the input, the processing and the output of the apps into three components: Models, Views and Controllers (Six Benefits Of Using MVC Model For Effective Web Application Development, n.d.). This separation can be very helpful for our project because if the requirements change, these will not affect the whole architecture of the model.
+For our Flask web application, we are going to use the Model-View-Controller pattern. This pattern, made up of Models, Views and Controllers, separates the input, the processing and the output of the apps (Six Benefits Of Using MVC Model For Effective Web Application Development, n.d.). This separation can be very helpful for our project because if the requirements change, these will not affect the whole architecture of the model.
 
 #### Models
 The first step is to design the models using the Data Driven Design (DDD) approach, where nouns, adjectives and verbs suggest classes, attributes and methods, respectively. 
