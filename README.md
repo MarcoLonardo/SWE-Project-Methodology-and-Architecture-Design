@@ -96,11 +96,11 @@ Finally, we were able to wireframe focusing specifically on the four main goals 
 
 ### Application structure
 
-For our Flask web application, we are going to use the Model-View_Controller pattern. This model seprates the input, the processing and the output of the apps in three components: Models, Views and Controllers (Six Benefits Of Using MVC Model For Effective Web Application Development, n.d.). This separation can be very helpful for our project because if the requirements changes, these will not affect the whole architecture of the model.
+For our Flask web application, we are going to use the Model-View-Controller pattern. This model separates the input, the processing and the output of the apps into three components: Models, Views and Controllers (Six Benefits Of Using MVC Model For Effective Web Application Development, n.d.). This separation can be very helpful for our project because if the requirements change, these will not affect the whole architecture of the model.
 
 #### Models
-The first step is to design the models using the Data Driven Design (DDD) approach, where nouns, adjectives and verbs suggest classes, attributes and method, respectively. 
-Thus, using User Stories, we selected the following 8 models for our app. Attributes and methods for each of the classes are defined in the with UML class diagrams below.
+The first step is to design the models using the Data Driven Design (DDD) approach, where nouns, adjectives and verbs suggest classes, attributes and methods, respectively. 
+Thus, using User Stories, we selected the following 8 models for our app. Attributes and methods for each of the classes are defined in the UML class diagrams below.
 
 1. Account
 2. Metric
@@ -117,7 +117,7 @@ Thus, using User Stories, we selected the following 8 models for our app. Attrib
 </p>
 
 #### Routes and Controllers
-At this point given the many number of flows among the models, we used the views (wireframes) and the user flows diagram to identify the the routes and the associated controller function. From the table below, we can see that, excluding the landing page (index), there are 8 routes, each of the routes correspond to a particular view (and therefore, user goal) we have identified in the wireframe section. The 9 routes and the relating controller functions are described in the following table.
+At this point, given the many numbers of flows among the models, we used the views (wireframes) and the user flows diagram to identify the routes and the associated controller function. From the table below, we can see that, excluding the landing page (index), there are 8 routes, each of the routes correspond to a particular view (and therefore, user goal) we have identified in the wireframe section. The 9 routes and the relating controller functions are described in the following table.
 
 <p align="center">
   <img width="754" alt="Route and Controllers" src="https://user-images.githubusercontent.com/64501760/146974502-98ab6c9e-96d3-4195-9a19-fcedb22aa7ba.png">
@@ -130,7 +130,7 @@ At this point given the many number of flows among the models, we used the views
 ### Relational database design
 
 #### Conceptual Design
-For the database design, we firstly start with the conceptual database design by identifying the important entities, their attributes and the relationships among them. Similarly to identifying models in the application structure section, we can use the data driven approach (DDD) to identify the entities. Choosing the entities relevantly to our models and with a consistent approach will help us ensure that our database design is comprehensive of all the models we have identified. In other words, we can ensure that we plan for for every specific model if we are able to understand their position in the relational database design. Thus, we obtain the following list of entities:
+For the database design, we firstly start with the conceptual database design by identifying the important entities, their attributes and the relationships among them. Similarly to identifying models in the application structure section, we can use the data driven approach (DDD) to identify the entities. Choosing the entities relevantly to our models and with a consistent approach will help us ensure that our database design is comprehensive of all the models we have identified. In other words, we can ensure that we plan for every specific model if we are able to understand their position in the relational database design. Thus, we obtain the following list of entities:
 
 1. Account
 2. Metric
@@ -141,8 +141,8 @@ For the database design, we firstly start with the conceptual database design by
 7. History
 8. Selection
 
-As we can see, this list is very similiar to the list of our models. This similiarity will help us ensure that all the requirements of our web app will be considered from a database design perspective. Nevertheless, differently from the models, in entities we don't find Exports. This is because we are assuming that the files that will be exported are stored as a blob files. As these files cannot to be stored in a relational databese, we keep exports as a model but it will not be an entity of the relational database. Another difference is that selection has been added as an entity only to address normalisation in the logical design stage.
-At this point, after having identified the attributes for each of the entities, we determine the relationships among entities and we describe thier cardinality using the Crow's Foot Notation. 
+As we can see, this list is very similar to the list of our models. This similarity will help us ensure that all the requirements of our web app will be considered from a database design perspective. Nevertheless, differently from the models, in entities, we don't find Exports. This is because we are assuming that the files that will be exported are stored as blob files. As these files cannot be stored in a relational database, we keep exports as a model but it will not be an entity of the relational database. Another difference is that selection has been added as an entity only to address normalisation in the logical design stage.
+At this point, after having identified the attributes for each of the entities, we determine the relationships among entities and describe their cardinality using the Crow's Foot Notation. 
 
 #### Logical Design
 Having defined the database conceptually, we can now work with the logical database design where we can start to validate the relations using normalisation. Thorugh normalisation we can ensure that when structuring data into a table, we avoid update anomalies and reduce data redundancy. Thus, for each entity and its attributes (representing a table) we first identify the primary keys and the correspoding foreign keys in the other tables. Primary keys are defined with the attribute ID and they are integer and with the "auto increment" constraint. This ensures that each primary key represents a column guranteed to be unique for each record. Setting the constraints of the relevant attributes as unique and not null was also important for referential integrity, as we needed to ensure that data within the relationships was consistent and accurate. Indeed, it was necessary to ensure that for all the one-to-many relationships, the primary key in one tables becomes the foreign key in the other table. This makes it very clear to understand what are the common columns that link tables together. As a result, we could now eliminate redundant data because, through this process, we could split larger tables into small ones. For instance, instead of repeating the access date attribute both for articles and preferences, we can now retrive that attribute looking at the history entity. This allowed us to avoid transitive functional dependency, grouping attributes in a more efficient and meaningful way. 
