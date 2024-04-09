@@ -1,4 +1,4 @@
-# Coursework 2
+# Methodology & Architecture Design
 
 Coursework 1 Data and Material has been  included in the folder for context and reference.
 
